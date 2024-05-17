@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>Controlador</servlet-name>
+        <servlet-class>com.rs.controlador.Controlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControladorImg</servlet-name>
+        <servlet-class>com.rs.controlador.ControladorImg</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GeneratePdfServlet</servlet-name>
+        <servlet-class>PDFs.GeneratePdfServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controlador</servlet-name>
+        <url-pattern>/Controlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GeneratePdfServlet</servlet-name>
+        <url-pattern>/GeneratePdfServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <servlet>
+        <servlet-name>GenerarPDFServlet</servlet-name>
+        <servlet-class>com.example.GenerarPDFServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GenerarPDFServlet</servlet-name>
+        <url-pattern>/GenerarPDF</url-pattern>
+    </servlet-mapping>
+    <dependency>
+        <groupId>com.itextpdf</groupId>
+        <artifactId>itextpdf</artifactId>
+        <version>5.1.0</version>
+    </dependency>
+    
+</web-app>

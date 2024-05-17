@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <title>Presentacion</title>
+        <link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!--Barra de navegación-->
+        <div id="navbar">
+            <a href="../index.jsp" id="logo">AcosoZero</a>
+            <div id="navbar-right">
+              <a class="active" href="#home">Principal</a>
+              <a href="#acercade">Acerca de nosotros</a>
+              <a href="#conocenos">Conócenos</a>
+            </div>
+            </div>
+
+            <div style="margin-top:210px;padding:15px 15px 25px;font-size:30px">
+                <!--Este div solo está de adorno, pero dejalo-->
+              </div>
+          
+        <!-- 
+            Aqui empieza el scroll
+        -->
+        <p style="color:transparent; background-color: transparent;">
+            <br><br><br>
+        </p>
+        <div id="home">
+            <p class="bienvenida">
+                Bienvenido
+            </p>
+        </div>
+
+        <div class="parallax">
+            <p style="text-align: center;">
+                <d id="AZB" class="dentro_imagen">
+                    <!--Este texto está en el Script-->
+                </d>
+            </p>
+        </div>
+
+        <div id="acercade" class="parallax2">
+            <p style="text-align: center;">
+                <d class="dentro_imagen">
+                    <br><br><br>
+                    AcozoZero comenzó como un simple proyecto pero, conforme pasaba el tiempo y este se fue desarrollando
+                    todos comenzamos a comprometernos mpas y más con las funcionalidades del proyecto, siempre estabamos
+                    dispuestos a mejorar o agregar funcionalidades al proyecto que tal vez solo lo mejoraran un 1% de lo
+                    que ya estaba. Este proyecto ha sido una colaboracion de 5 integrantes y esperamos pueda ser de gran
+                    utilidad. Nuestros proyectos siempre tendrán como finalidad el bienestar de todos. 
+                </d>
+            </p>
+        </div>
+        <br><br>
+        <div id="conocenos" class="conocenos">
+            <d style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 25px; border: black solid 2px; padding: 6px;">
+                CONÓCENOS
+            </d>
+            <br><br><br>
+
+            <button class="btn"> 
+                <a href="quirino.html" target="_blank">
+                    Quirino González Johann
+                </a>
+            </button>
+            
+            <button class="btn"> 
+                <a href="cristian.html" target="_blank">
+                    Gutierrez Flores Cristian
+                </a>
+            </button>
+
+            <button class="btn"> 
+                <a href="Fernanda.html" target="_blank">
+                    Morales Muñoz Fernanda
+                </a>
+            </button>
+
+            <button class="btn"> 
+                <a href="alexander.html" target="_blank">
+                    Ramos Flores Alexander
+                </a>
+            </button>
+
+            <button class="btn"> 
+                <a href="francisco.html" target="_blank">
+                    Rojo Martinez Francisco
+                </a>
+            </button>
+            
+            <br>
+
+        </div>
+
+
+
+        <script>
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+              } else {
+                document.getElementById("navbar").style.padding = "80px 10px";
+                document.getElementById("logo").style.fontSize = "35px";
+              }
+            }
+
+            //Script de quienes somos
+            document.getElementById("AZB").innerHTML="<br><br><br><br><br><br> Somos una empresa integrada por alumnos del CECyT 9 'Juan de Dios Bátiz', <br> una union académica de desarrolladores de software, quienes se <br> encargan de facilitarte la vida con sus proyectos. Recuerda siempre <br> estar al pendiente de nustros próximos lanzamientos.";
+            
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,54 @@
+
+body{
+    background-color:#111D38
+
+}
+
+/* Boton compartido para regresar*/
+.custom-button {
+    background-color: #3C3654 !important; /* Color de fondo verde */
+    color: white !important; /* Color del texto blanco */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    border: 1px solid black; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/*Parrax*/
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('Imagenes/batiz.jpg');
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7; /* Opacidad de la foto*/
+}
+
+.nombre{
+    color: snow;
+    font-size: 50px;
+    background-color: transparent;
+    text-align: center;
+    
+}
+
+.detalles{
+    color: white;
+    text-align: center;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.fin{
+    color: whitesmoke;
+    background-color:#111D38;
+    border-top: 1px solid black;
+}
+

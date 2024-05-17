@@ -1,0 +1,313 @@
+
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background: #212529;
+}
+
+ .dropdown-container {
+     position: absolute;
+    /* Cambia a posición absoluta */
+     top: -45%;
+    /* Ajusta la posición vertical según necesites */
+     right: 2%;
+    /* Ajusta la posición horizontal según necesites */
+     width: 10%;
+     z-index: 9999;
+     padding-top: 15px;
+}
+ .navbar-brand img {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 8%;
+     z-index: 9999;
+}
+ .dropdown-toggle {
+     color: white;
+     cursor: pointer;
+}
+ .dropdown-menu {
+     border-radius: 5px;
+     display: none;
+     position: absolute;
+     top: 55%;
+     left: 50%;
+     transform: translateX(-50%);
+     text-align: center;
+     background-color: #fff;
+     z-index: 9999;
+}
+ .dropdown-menu a {
+     display: block;
+     padding: 10px 20px;
+     color: gray;
+     font-size: 16px;
+     text-decoration: none;
+     border: 1px solid transparent;
+     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+ .dropdown-menu a:hover {
+     background-color: gray;
+     color: white;
+     border-color: white;
+}
+ .dropdown-menu .dropdown-divider {
+     border-top: 1px solid gray;
+     margin: 10px 0;
+}
+ .modal-content {
+     height: 80%;
+     width: 60%;
+     z-index: 2;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+ .nav-pills .nav-item {
+     display: inline-block;
+     margin-right: 10px;
+}
+ .nav-pills .nav-link {
+     padding: 10px 20px;
+     background-color: blue;
+     color: white;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     text-decoration: none;
+    /* Elimina la línea subrayada */
+     display: block;
+    /* Cambia el enlace a bloque para ocupar todo el contenedor */
+     border-radius: 0;
+    /* Reinicia todos los bordes */
+     border-top-right-radius: 20px;
+    /* Borde superior derecho redondeado */
+}
+ .nav-pills .nav-link:hover {
+     background-color: #00bcd4;
+     color: white;
+}
+ .modal-header {
+     background-color: #f8f9fa;
+    /* Color de fondo más claro */
+     color: #212529;
+    /* Color de texto más oscuro */
+     border-bottom: 1px solid #ccc;
+    /* Borde inferior opcional */
+     padding: 15px;
+    /* Aumenta el espacio interno para que los botones ocupen todo el espacio */
+}
+ .close {
+     color: #fff;
+     font-size: 24px;
+     font-weight: bold;
+}
+ .close:hover {
+     color: #ccc;
+}
+.nav-pills {
+    list-style-type: none; /* Elimina la viñeta negra al lado de los botones */
+}
+
+.ButtonFormSession #RegistroForm {
+    border: 1px solid red;
+    border-radius: 3px;
+    color: red;
+    font-size: 16px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; /* Ajusta la distancia entre botones */
+}
+
+.ButtonFormSession #RegistroForm:hover {
+    transform: scale(1.05);
+    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.2); /* Cambio en la dirección de la sombra */
+    color: blue; /* Cambia el color al pasar el mouse */
+    border-color: blue; /* Cambia el color del borde al pasar el mouse */
+}
+
+.nav-pills .ButtonFormSession #InicioSesionForm {
+    border: 1px solid red;
+    border-radius: 3px;
+    color: red;
+    font-size: 16px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; /* Ajusta la distancia entre botones */
+}
+
+.nav-pills .ButtonFormSession #InicioSesionForm:hover {
+    transform: scale(1.05);
+    box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.2); /* Cambio en la dirección de la sombra */
+    color: blue; /* Cambia el color al pasar el mouse */
+    border-color: blue; /* Cambia el color del borde al pasar el mouse */
+}
+
+.modal-header .nav-pills {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+ .modal-header:hover {
+     background-color: #f1eeee;
+    /* Color más oscuro al pasar el mouse */
+}
+ 
+/* Estilos para el formulario */
+
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilo para el botón */
+.btn-outline-danger {
+  
+  border: 1px solid red;
+    border-radius: 3px;
+    color: red;
+    font-size: 16px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 10px; /* Ajusta la distancia entre botones */
+}
+
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btn btn-outline-danger btn-block{
+     display: flex;
+    justify-content: center; /* Alinea horizontalmente en el centro */
+    align-items: center; /* Alinea verticalmente en el centro si es necesario */
+}
+.ola{
+        display: flex;
+    justify-content: center; /* Alinea horizontalmente en el centro */
+    align-items: center; /* Alinea verticalmente en el centro si es necesario */
+}
+
+/* Estilos adicionales */
+.btn-block {
+  width: auto;
+}
+
+/* Para hacer el botón más grande al hacer hover */
+.btn-outline-danger:hover {
+  transform: scale(1.1);
+}
+
+/* Opcional: Agregar sombra al botón */
+.btn-outline-danger {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.modalimage {
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+    width: 60%;
+}
+
+.recuadro {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-image {
+    width: 100%;
+    height: 100%; /* Altura fija deseada */
+    border-radius: 10px;
+}
+
+/* Estilo para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el encabezado de la tabla */
+.table thead th {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Estilo para las filas de datos de la tabla */
+.table tbody td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Estilo para filas alternas */
+.table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Estilo para filas impares */
+.table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+/* Estilo para la imagen dentro de la celda */
+.table tbody img {
+  max-width: 100px;
+  max-height: 80px;
+}
+
+ .navbars-nav {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+ .navbars-nav .nav-item{
+     width: 20%;
+     height: 66vh;
+     background-color: black;
+     border-radius: 20px;
+     margin-right: 10px;
+}
+ .navbars-nav .nav-item:last-child {
+     margin-right: 0;
+}
+ .navbars-nav .nav-link {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     color: white;
+     text-decoration: none;
+     font-size: 16px;
+     transition: background-color 0.3s ease;
+}
+ .navbars-nav .nav-item .nav-link:active .menu_index{
+     display: flex;
+     background-color: #ccc;
+}
