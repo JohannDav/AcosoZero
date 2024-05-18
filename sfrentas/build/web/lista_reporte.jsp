@@ -582,7 +582,7 @@ button {
 
 </style>
 
-      <a class="navbar-brand" href="SOFTUX/index.html">
+<a class="navbar-brand" href="PresentacionAcosoZero/index.html">
       <img src="SOFTUX/IMAGENES/LogoPaginaSinDetallePNG.png" alt="AcosoZer0Batiz">
       </a>
       <div class="dropdown-container">
