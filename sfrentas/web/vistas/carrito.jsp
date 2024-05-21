@@ -581,12 +581,8 @@ button {
 }
 
 </style>
-
-<<<<<<< HEAD
-<a class="navbar-brand" href="../index.jsp">
-=======
+<a class="navbar-brand" href="../index.jsp"> 
 <a class="navbar-brand" href="index.jsp">
->>>>>>> quirino
       <img src="SOFTUX/IMAGENES/LogoPaginaSinDetallePNG.png" alt="AcosoZer0Batiz">
       </a>
       <div class="dropdown-container">
