@@ -74,6 +74,10 @@
                                     <input type="text" name="imagen" class="form-control"/>
                                 </div>  
                                 <div class="form-group">
+                                    <label>Fecha del suceso</label>
+                                    <textarea name="txtFechasuceso" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
                                     <button class="btn btn-danger" name="accion" value="GuardarReporte">Guardar</button>
                                 </div>
                             </form>

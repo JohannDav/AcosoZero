@@ -6,17 +6,19 @@ public class Reporte {
     private double precio;
     private int cantreporte;
     private String imagen;
+    private String fechasuceso;
 
     public Reporte() {
     }
 
-    public Reporte(int idReporte, String nombres, String descripcion, double precio, int cantreporte, String imagen) {
+    public Reporte(int idReporte, String nombres, String descripcion, double precio, int cantreporte, String imagen, String fechasuceso) {
         this.idReporte = idReporte;
         this.nombres = nombres;
         this.descripcion = descripcion;
         this.precio = precio;
         this.cantreporte = cantreporte;
         this.imagen = imagen;
+        this.fechasuceso = fechasuceso;
     }
 
     public int getIdReporte() {
@@ -63,7 +65,15 @@ public class Reporte {
         return imagen;
     }
 
-    public void setImage(String imagen) {
+    public void setImagen(String imagen) {
         this.imagen = imagen;
     }
+    
+    public String getFechasuceso() {
+        return fechasuceso;
+    }
+
+    public void setFechasuceso(String fechasuceso) {
+        this.fechasuceso = fechasuceso;
+    }    
 }

@@ -7,6 +7,7 @@ public class Carrito {
     String nombres;
     String imagen;
     String descripcion;
+    String fechasuceso;
     double precioCompra;
     int cantidad;
     double subTotal;
@@ -14,12 +15,13 @@ public class Carrito {
     public Carrito() {
     }
 
-    public Carrito(int item, int idReporte, String nombres, String imagen, String descripcion, double precioCompra, int cantidad, double subTotal) {
+    public Carrito(int item, int idReporte, String nombres, String imagen, String descripcion, String fechasuceso, double precioCompra, int cantidad, double subTotal) {
         this.item = item;
         this.idReporte = idReporte;
         this.nombres = nombres;
         this.imagen = imagen;
         this.descripcion = descripcion;
+        this.fechasuceso = fechasuceso;
         this.precioCompra = precioCompra;
         this.cantidad = cantidad;
         this.subTotal = subTotal;
@@ -63,6 +65,14 @@ public class Carrito {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+    
+    public String getFechasuceso() {
+        return fechasuceso;
+    }
+
+    public void setFechasuceso(String fechasuceso) {
+        this.fechasuceso = fechasuceso;
     }
 
     public double getPrecioCompra() {

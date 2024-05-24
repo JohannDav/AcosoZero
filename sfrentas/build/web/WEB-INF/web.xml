@@ -12,6 +12,10 @@
         <servlet-name>GeneratePdfServlet</servlet-name>
         <servlet-class>PDFs.GeneratePdfServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ReportesServlet</servlet-name>
+        <servlet-class>PDFs.ReportesServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Controlador</servlet-name>
         <url-pattern>/Controlador</url-pattern>
@@ -19,6 +23,10 @@
     <servlet-mapping>
         <servlet-name>GeneratePdfServlet</servlet-name>
         <url-pattern>/GeneratePdfServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReportesServlet</servlet-name>
+        <url-pattern>/ReportesServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
@@ -38,5 +46,4 @@
         <artifactId>itextpdf</artifactId>
         <version>5.1.0</version>
     </dependency>
-    
 </web-app>
