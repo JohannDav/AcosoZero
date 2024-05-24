@@ -213,6 +213,7 @@ public class Controlador extends HttpServlet {
                     p.setPrecio(Double.parseDouble(pro.get(4)));
                     p.setCantreporte(Integer.parseInt(pro.get(5)));
                     p.setImagen(pro.get(6));
+                    p.setFechasuceso(pro.get(7));
                     pdao.AgregarNuevoReporte(p);
 
                 } catch (Exception e) {
@@ -276,6 +277,7 @@ public class Controlador extends HttpServlet {
                 car.setDescripcion(p.getDescripcion());
                 car.setPrecioCompra(p.getPrecio());
                 car.setCantidad(cantidad);
+                car.setFechasuceso(p.getFechasuceso());
                 subtotal = cantidad * p.getPrecio();
                 car.setSubTotal(subtotal);
                 listaReportes.add(car);
@@ -288,9 +290,11 @@ public class Controlador extends HttpServlet {
             car.setDescripcion(p.getDescripcion());
             car.setPrecioCompra(p.getPrecio());
             car.setCantidad(cantidad);
+            car.setFechasuceso(p.getFechasuceso());
             subtotal = cantidad * p.getPrecio();
             car.setSubTotal(subtotal);
             listaReportes.add(car);
         }
     }
+    
 }

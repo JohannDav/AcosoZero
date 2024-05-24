@@ -60,8 +60,9 @@ public class Reporteservlet extends HttpServlet {
                 double precio = resultSet.getDouble("Precio");
                 int cantreporte = resultSet.getInt("Cantreporte");
                 String imagen = resultSet.getString("Imagen");
+                String fechasuceso = resultSet.getString("Fechasuceso");
                 
-                Reporte reporte = new Reporte(idReporte, nombres, descripcion, precio, cantreporte, imagen);
+                Reporte reporte = new Reporte(idReporte, nombres, descripcion, precio, cantreporte, imagen, fechasuceso);
                 reportes.add(reporte);
             }
 
@@ -79,15 +80,17 @@ public class Reporteservlet extends HttpServlet {
         double precio = Double.parseDouble(request.getParameter("precio"));
         int cantreporte = Integer.parseInt(request.getParameter("cantreporte"));
         String imagen = request.getParameter("imagen");
+        String fechasuceso = request.getParameter("fechasuceso");
 
         try (Connection connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword)) {
-            String sql = "INSERT INTO reporte (Nombres, Descripcion, Precio, Cantreporte, Imagen) VALUES (?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO reporte (Nombres, Descripcion, Precio, Cantreporte, Imagen, Fechasuceso) VALUES (?, ?, ?, ?, ?, ?)";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, nombres);
             statement.setString(2, descripcion);
             statement.setDouble(3, precio);
             statement.setInt(4, cantreporte);
             statement.setString(5, imagen);
+            statement.setString(6, fechasuceso);
             statement.executeUpdate();
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -104,16 +107,18 @@ public class Reporteservlet extends HttpServlet {
         double precio = Double.parseDouble(request.getParameter("precio"));
         int cantreporte = Integer.parseInt(request.getParameter("cantreporte"));
         String imagen = request.getParameter("imagen");
+        String fechasuceso = request.getParameter("fechasuceso");
 
         try (Connection connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword)) {
-            String sql = "UPDATE reporte SET Nombres = ?, Descripcion = ?, Precio = ?, Cantreporte = ?, Imagen = ? WHERE idReporte = ?";
+            String sql = "UPDATE reporte SET Nombres = ?, Descripcion = ?, Precio = ?, Cantreporte = ?, Imagen = ?, Fechasuceso = ? WHERE idReporte = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, nombres);
             statement.setString(2, descripcion);
             statement.setDouble(3, precio);
             statement.setInt(4, cantreporte);
             statement.setString(5, imagen);
-            statement.setInt(6, idReporte);
+            statement.setString(6, fechasuceso);
+            statement.setInt(7, idReporte);
             statement.executeUpdate();
         } catch (SQLException ex) {
             ex.printStackTrace();

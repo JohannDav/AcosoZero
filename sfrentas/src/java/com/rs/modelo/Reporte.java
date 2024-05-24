@@ -8,18 +8,20 @@ public class Reporte {
     String descripcion;
     double precio;
     int cantreporte;
-    private String imagen; // Cambiado a String para almacenar la ruta o URL de la imagen
-
+    String imagen; // Cambiado a String para almacenar la ruta o URL de la imagen
+    String fechasuceso;
+    
     public Reporte() {
     }
 
-    public Reporte(int id, String nombres, String descripcion, double precio, int cantreporte, String imagen) {
+    public Reporte(int id, String nombres, String descripcion, double precio, int cantreporte, String imagen, String fechasuceso) {
         this.id = id;
         this.nombres = nombres;
         this.descripcion = descripcion;
         this.precio = precio;
         this.cantreporte = cantreporte;
         this.imagen = imagen;
+        this.fechasuceso = fechasuceso;
     }
 
     public int getId() {
@@ -68,5 +70,13 @@ public class Reporte {
 
     public void setImagen(String imagen) {
         this.imagen = imagen;
+    }
+    
+    public String getFechasuceso() {
+        return fechasuceso;
+    }
+
+    public void setFechasuceso(String fechasuceso) {
+        this.fechasuceso = fechasuceso;
     }
 }

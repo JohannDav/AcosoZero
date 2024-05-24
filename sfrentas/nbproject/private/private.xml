@@ -3,7 +3,47 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/LENOVO/.ssh/Proyecto/sfrentas/web/index.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/index.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/Pago.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/vistas/addReporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/css/OverallDesings_Menu_Buttons.css</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/vistas/DetalleCompra.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/vistas/carrito.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/ReporteDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/controlador/Controlador.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/guardarBusqueda.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/agregar_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/DetalleCompra.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/config/Conexion.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/Compra.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/Carrito.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/AcosoZer0Batiz/CVs/CV_Francisco.html</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/css/Carrito.css</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/INFORMATIVO/Imagenes/Logo_AcosoZer0Batiz.png</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/INFORMATIVO/CSS_INFORMATIVO/IndexDesigns_INFORMATIVO.css</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/AcosoZer0Batiz/CVs/CV_Cristian.html</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/AcosoZer0Batiz/CVs/CV_Fernanda.html</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/AcosoZer0Batiz/CVs/CV_Quirino.html</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/Reporte.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/css/Buscar_Reportes.css</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/paquete/Reporteservlet.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/paquete/ImageManager.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/AcosoZer0Batiz/CVs/CV_Alexander.html</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/css/DiesenoAgregar222.css</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/config/Fecha.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/vistas/compras.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/AcosoZer0Batiz/CSS_CVs/OverallDesigns_AcosoZer0Batiz.css</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/editar_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/paquete/ReporteDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/paquete/Reporte.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/UsuarioDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/lista_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/Usuario.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/PDFs/GeneratePdfServlet.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/AcosoZer0Batiz/index.html</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/src/java/com/rs/modelo/ComprasDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/Buscar_Reporte_Agregar_Lista.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/Desktop/Proyecto/sfrentas/web/INFORMATIVO/index.html</file>
         </group>
     </open-files>
 </project-private>
