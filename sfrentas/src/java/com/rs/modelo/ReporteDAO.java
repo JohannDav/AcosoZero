@@ -34,6 +34,7 @@ public class ReporteDAO extends Conexion{
                 p.setPrecio(rs.getDouble(4));
                 p.setCantreporte(rs.getInt(5));    
                 p.setImagen(rs.getString(6));
+                p.setFechasuceso(rs.getString(7));
                 list.add(p);
             }
         } catch (Exception e) {
@@ -55,6 +56,7 @@ public class ReporteDAO extends Conexion{
                 p.setPrecio(rs.getDouble(4));
                 p.setCantreporte(rs.getInt(5));   
                 p.setImagen(rs.getString(6));
+                p.setFechasuceso(rs.getString(7));
             }
         } catch (Exception e) {
         }
@@ -75,6 +77,7 @@ public class ReporteDAO extends Conexion{
                 p.setPrecio(rs.getDouble(4));
                 p.setCantreporte(rs.getInt(5));   
                 p.setImagen(rs.getString(6));
+                p.setFechasuceso(rs.getString(7));
                 lista.add(p);
             }
         } catch (Exception e) {
@@ -84,7 +87,7 @@ public class ReporteDAO extends Conexion{
 
     
     public int AgregarNuevoReporte(Reporte p){
-        String sql="insert into reporte(idReporte,Nombres,Descripcion,Precio,Cantreporte, Imagen)values(?,?,?,?,?,?)";
+        String sql="insert into reporte(idReporte, Nombres, Descripcion, Precio, Cantreporte, Imagen, Fechasuceso)values(?,?,?,?,?,?,?)";
         try {
             ps=getConnection().prepareStatement(sql);
             ps.setInt(1, p.getId());
@@ -93,6 +96,7 @@ public class ReporteDAO extends Conexion{
             ps.setDouble(4, p.getPrecio());
             ps.setInt(5, p.getCantreporte());
             ps.setString(6, p.getImagen());
+            ps.setString(7, p.getFechasuceso());
             ps.executeUpdate();
         } catch (Exception e) {
         }

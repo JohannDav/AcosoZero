@@ -1,0 +1,307 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .letter {
+        color: darkblue;
+        display: flex;
+        padding: 20px;
+    }
+
+    .left-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ajuste del ancho para que se expanda */
+}
+
+    .top-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px; /* Ajuste del margen izquierdo */
+}
+
+    .search-box {
+        flex: 1;
+        margin-left: 20px;
+    }
+    
+ .column {
+    background-color: azure;
+    margin-bottom: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border: silver 2px solid;
+    margin: 20px;
+    text-align: justify; /* Alineación justificada del texto */
+    margin-left: 20%;
+}
+
+   .info-column {
+    flex: 1; /* Ajuste del ancho para que ocupe el espacio restante */
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.right-column {
+    flex-basis: 30%; /* Ancho de la columna derecha */
+    margin-left: 20px;
+    margin-right: 20px; /* Ajuste del margen derecho */
+    padding: 20px;
+    background-color: #3399ff;
+    border: silver 2px solid;
+    margin-top: 20px;
+    height: 1070px; /* Ajuste de altura */
+}
+
+.column{
+    background: #e8c1ff;
+    border-radius: 10px;
+}
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    body{
+        background-color: #ffe0ee;
+    }
+    .search-box {
+    display: inline-block;
+}
+
+.search-box input[type="text"],
+.search-box button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box:hover input[type="text"],
+.search-box:hover button {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para las imágenes */
+.imagen-cuadro {
+    margin-bottom: 20px;
+}
+
+.imagen-cuadro img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contactos {
+    margin-top: 20px;
+}
+
+.contactos h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contactos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contactos li {
+    margin-bottom: 10px;
+}
+
+.letter {
+        color: darkblue;
+        display: flex;
+        padding: 20px;
+    }
+
+   .left-column {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5; /* Cambio de flex: 1; a flex: 0.5; */
+}
+
+    .top-section {
+        display: flex;
+        align-items: center;
+        margin-left: 40%;
+    }
+
+    .search-box {
+        flex: 1;
+        margin-left: 20px;
+    }
+    
+    .column {
+        background-color: azure;
+        margin-bottom: 50px;
+        padding: 20px;
+        cursor: pointer;
+        border: silver 2px solid;
+        margin: 20px;
+        text-align: center; /* Alinear texto al centro */
+        margin-left: 30%;
+    }
+
+    .info-column {
+        flex: .5px;
+        margin-left: 20px;
+        
+    }
+
+.right-column {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    flex-basis: 18%; /* Ancho de la columna derecha */
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #3399ff;
+    border: silver 2px solid;
+    margin: 20px;
+    height: 1070px; /* Ajuste de altura */
+}
+
+.column{
+    background: #e8c1ff;
+    border-radius: 10px;
+}
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    body{
+        background-color: #ffe0ee;
+    }
+    .search-box {
+    display: inline-block;
+}
+
+.search-box input[type="text"],
+.search-box button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box:hover input[type="text"],
+.search-box:hover button {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para las imágenes */
+.imagen-cuadro {
+    margin-bottom: 20px;
+}
+
+.imagen-cuadro img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contactos {
+    margin-top: auto; /* Para que se posicione al final */
+}
+
+.contactos h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contactos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contactos li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el autocompletado */
+    .autocomplete {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-top: none;
+        z-index: 999;
+        width: calc(17% - 2px);
+    }
+
+    .autocomplete li {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .autocomplete li:hover {
+        background-color: #e9e9e9;
+    }
+
+    .autocomplete li:last-child {
+        border-bottom: none;
+    }
+    
+    .logo-container {
+    position: fixed;
+    top: 20px; /* Ajusta el valor según sea necesario */
+    left: 20px; /* Ajusta el valor según sea necesario */
+    z-index: 9999; /* Asegura que la imagen esté por encima del contenido */
+}
+
+.logo-container {
+    position: fixed;
+    top: 20px; /* Ajusta el valor según sea necesario */
+    left: 20px; /* Ajusta el valor según sea necesario */
+    z-index: 9999; /* Asegura que la imagen esté por encima del contenido */
+}

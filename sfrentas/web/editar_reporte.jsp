@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="icon" type="image/x-icon" href="PresentacionAcosoZero/Informate/favicon.ico.jpg">
-
+        <link rel="icon" type="image/x-icon" href="AcosoZer0Batiz/Imagenes/favicon.ico">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Editar Reporte</title>
     </head>
