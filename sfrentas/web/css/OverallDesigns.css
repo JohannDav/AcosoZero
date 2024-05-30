@@ -23,7 +23,7 @@ body {
 }
 
 .dropdown-toggle {
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .dropdown-menu a:hover {
-    background-color: gray;
+    background-color: pink;
     color: white;
     border-color: white;
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .nav-pills .nav-link:hover {
-    background-color: #00bcd4;
+    background-color: #dee2e6;
     color: white;
 }
 

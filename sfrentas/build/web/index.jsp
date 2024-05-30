@@ -6,7 +6,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <link rel="icon" type="image/x-icon" href="AcosoZer0Batiz/Imagenes/favicon.ico">
       <link href="css/IndexDesigns.css" rel="stylesheet" type="text/css" />
-      <link href="css/OverallDesigns1.css" rel="stylesheet" type="text/css" />
+      <link href="css/OverallDesigns.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons&quot; rel="stylesheet">
       <link href="css/Buscar_Reportes.css" rel="stylesheet" type="text/css" />
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -28,7 +28,7 @@
             </a>
             <div class="dropdown-menu text-center dropdown-menu-right">
                <a class="dropdown-item" href="#"
-                  ><img src="img/user.png" alt="60" height="60"
+                  ><img src="img/usuario.png" alt="60" height="60"
                   /></a>
                <a class="dropdown-item" href="#">${user}</a>
                <a
@@ -72,8 +72,8 @@
                      <i class="fas fa-cart-plus">
                      </i>
                      <div class="menu_index">
-                        <img src="https://www.myconfinedspace.com/wp-content/uploads/2013/09/halo-4-Vertical-Wallpaper-700x1242.jpg" />
-                        <img class="top rar" src="https://i.pinimg.com/originals/37/a2/d8/37a2d800334bb991aa526238955118fd.jpg" />
+                        <img src="img/empresa2.png" />
+                        <img class="top rar" src="img/empresa1.png"/>
                      </div>
                   </a><div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Empresa
@@ -82,7 +82,7 @@
                <li class="nav-item active">
                   <a class="nav-link" href="./ReporteServlet?action=list">
                      <div class="menu_index">
-                        <img src="https://s0.smartresize.com/wallpaper/289/381/HD-wallpaper-halo-infinite-mobile.jpg" />
+                        <img src="img/reporte2.png" />
                         <img class="top rar" src="https://i.pinimg.com/736x/e8/6c/c6/e86cc64fd3aee67168ba578921c55dc9.jpg" />
                      </div>
                   </a><div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
@@ -212,7 +212,7 @@
                <div class="modal-content">
                    <div class="modalimage">
                          <div class="recuadro">
-                         <img id="modalimage" src="SOFTUX/IMAGENES/HALO2.jpg" class="rounded-image"> </div>
+                         <img id="modalimage" src="" class="rounded-image"> </div>
                   </div>
                   <div class="pr-2 pt-1">
                      <button
@@ -224,7 +224,7 @@
           </div>
                       
                   <div class="text-center">
-                     <img src="img/user.png" width="100" height="100" />
+                     <img src="img/usuario.png" width="100" height="100" />
                   </div>
                    <div class="olapapu">
                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">

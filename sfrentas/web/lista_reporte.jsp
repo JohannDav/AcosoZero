@@ -5,7 +5,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="icon" type="image/x-icon" href="AcosoZer0Batiz/Imagenes/favicon.ico">
-        <link href="css/OverallDesigns1.css" rel="stylesheet" type="text/css" />
+        <link href="css/OverallDesigns.css" rel="stylesheet" type="text/css" />
         <link href="css/DiesenoAgregar222.css" rel="stylesheet" type="text/css" />
         <link href="css/Buttons_Lista_Reporte.css" rel="stylesheet" type="text/css"/>
         <link href="css/OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
             </a>
             <div class="dropdown-menu text-center dropdown-menu-right">
                <a class="dropdown-item" href="#"
-                  ><img src="img/user.png" alt="60" height="60"
+                  ><img src="img/usuario.png" alt="60" height="60"
                   /></a>
                <a class="dropdown-item" href="#">${user}</a>
                <a
@@ -302,7 +302,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
           </div>
                       
                   <div class="text-center">
-                     <img src="img/user.png" width="100" height="100" />
+                     <img src="img/usuario.png" width="100" height="100" />
                   </div>
                   <div class="modal-header text-center">
                      <ul class="nav nav-pills">

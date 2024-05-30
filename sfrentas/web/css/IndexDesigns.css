@@ -73,8 +73,8 @@
 }
 
 .btn-danger {
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #DC3545;
+  border-color: #DC3545;
   color: #fff;
 }
 
@@ -112,7 +112,7 @@
  .navbar-nav .nav-item{
      width: 20%;
      height: 66vh;
-     background-color: black;
+     background-color: white;
      border-radius: 20px;
      margin-right: 10px;
 }
