@@ -174,7 +174,6 @@ public class GeneratePdfServlet extends HttpServlet {
             throw new ServletException("Error al generar el PDF", e);
         }
 
-        //Aqui se debe poner el correo a donde se va a mandar 
         sendEmailWithAttachment("morales.munoz.mily@gmail.com", "Reporte Generado", "Adjunto se encuentra el reporte generado.", pdfData);
 
         response.getOutputStream().write(pdfData);

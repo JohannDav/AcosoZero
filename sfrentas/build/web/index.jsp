@@ -61,7 +61,7 @@
                    <a class="nav-link" href="INFORMATIVO/index.html">
                      <div class="menu_index">
                         <img src="https://i.redd.it/wixrspq3mhc51.jpg" />
-                        <img class="top rar" src="https://store-images.s-microsoft.com/image/apps.10933.65494054591008504.4eae27ba-1cfe-4af2-950a-4af81f8cd22a.b5b2909d-8884-48d0-b25a-68d6518c9b73" />
+                        <img class="top rar" src="img/info1.png" />
                      </div> 
                   </a> <div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Informate
