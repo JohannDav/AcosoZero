@@ -15,7 +15,7 @@
 
 #navbar a {
   float: left;
-  color: black;
+  color: white;/*cambia .ogo*/
   text-align: center;
   padding: 8px;
   text-decoration: none;

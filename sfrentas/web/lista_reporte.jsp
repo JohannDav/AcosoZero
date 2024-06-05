@@ -5,7 +5,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="icon" type="image/x-icon" href="AcosoZer0Batiz/Imagenes/favicon.ico">
-        <link href="css/OverallDesigns.css" rel="stylesheet" type="text/css" />
+        <link href="css/OverallDesigns1.css" rel="stylesheet" type="text/css" />
         <link href="css/DiesenoAgregar222.css" rel="stylesheet" type="text/css" />
         <link href="css/Buttons_Lista_Reporte.css" rel="stylesheet" type="text/css"/>
         <link href="css/OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />

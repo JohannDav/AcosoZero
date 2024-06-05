@@ -6,7 +6,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <link rel="icon" type="image/x-icon" href="AcosoZer0Batiz/Imagenes/favicon.ico">
       <link href="css/IndexDesigns.css" rel="stylesheet" type="text/css" />
-      <link href="css/OverallDesigns.css" rel="stylesheet" type="text/css" />
+      <link href="css/OverallDesigns1.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
