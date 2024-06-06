@@ -4,7 +4,7 @@ body {
     padding: 0;
     height:200px;
     background: rgb(189, 189, 189);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,143,38,1) 0%, rgba(150,126,197,1) 48%, rgba(0,255,222,1) 100%);
+    background: linear-gradient(90deg, #b78c6e 0%, #C29D84 0%,#BA9696 48%,#AC204C 100%);
     background-size: 300% 100%;
     animation: gradient 7s ease infinite;
     

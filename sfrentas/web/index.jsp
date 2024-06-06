@@ -60,7 +60,7 @@
                <li class="nav-item active">
                    <a class="nav-link" href="INFORMATIVO/index.html">
                      <div class="menu_index">
-                        <img src="https://i.redd.it/wixrspq3mhc51.jpg" />
+                        <img src="img/informate2.png" />
                         <img class="top rar" src="img/info1.png" />
                      </div> 
                   </a> <div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
@@ -83,7 +83,7 @@
                   <a class="nav-link" href="./ReporteServlet?action=list">
                      <div class="menu_index">
                         <img src="img/reporte2.png" />
-                        <img class="top rar" src="https://i.pinimg.com/736x/e8/6c/c6/e86cc64fd3aee67168ba578921c55dc9.jpg" />
+                        <img class="top rar" src="img/informe1.png" />
                      </div>
                   </a><div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Informe
