@@ -305,7 +305,7 @@ label {
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #0fe0f5; /*Colo de texto sin hover*/
+  color: #DE7D97; /*Colo de texto sin hover*/
   font-size: 16px;
   font-weight: bold;
   background-color: transparent;
@@ -323,7 +323,7 @@ label {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 6px solid #0fe0f5; /*Color del recuadro sin fondo sin hover*/
+  border: 6px solid #DE7D97; /*Color del recuadro sin fondo sin hover*/
 }
 
 .blob-btn:after {
@@ -334,7 +334,7 @@ label {
   top: 9px;
   width: 100%;
   height: 100%;
-  border: 6px solid #222; /*Color de la sombra del recuadro sin hover*/
+  border: 6px solid #E67599; /*Color de la sombra del recuadro sin hover*/
   transition: all 0.3s 0.2s;
 }
 
@@ -370,7 +370,7 @@ label {
   top: 6px;
   width: 25%;
   height: 100%;
-  background: #0fe0f5; /*Relleno cuando se aplica propiedad hover*/
+  background: #DE7D97; /*Relleno cuando se aplica propiedad hover*/
   border-radius: 100%;
   transform: translate3d(0, 150%, 0) scale(1.7);
   transition: transform 0.45s;

@@ -377,8 +377,8 @@ $('.remove').click(function(){
 
 
     var imagenes = [];
-    for (var i = 1; i <= 60; i++) {
-        var rutaImagen = "SOFTUX/IMAGENES/image" + i + ".jpg";
+    for (var i = 1; i <= 7; i++) {
+        var rutaImagen = "img/image" + i + ".jpg";
         imagenes.push(rutaImagen);
     }
     
