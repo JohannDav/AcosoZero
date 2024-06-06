@@ -64,6 +64,8 @@ CREATE TABLE `reporte` (
   `Precio` double DEFAULT NULL,
   `Cantreporte` int(11) UNSIGNED DEFAULT NULL,
   `Imagen` VARCHAR(255) NOT NULL,
+  `Turno` varchar(255) DEFAULT NULL,
+  `Lugar` varchar(255) DEFAULT NULL,  
   `Fechasuceso` VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

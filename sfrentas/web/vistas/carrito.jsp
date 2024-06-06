@@ -185,6 +185,8 @@ contentType="text/html" pageEncoding="UTF-8"%>
                                     </td>
                                     <td>${c.getDescripcion()}</td>
                                     <td>${c.getPrecioCompra()}</td>
+                                    <td>${c.getTurno()}</td>
+                                    <td>${c.getLugar()}</td>
                                     <td>        
                                         <input type="hidden" id="item1" value="${c.getIdReporte()}">
                                         <input type="number" min="1" max="10"  id="Cant" class=" form-control text-center" value="${c.getCantidad()}">

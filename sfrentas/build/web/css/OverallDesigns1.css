@@ -148,30 +148,6 @@ label {
     font-weight: bold;
 }
 
-.btn-outline-danger {
-    border: 1px solid red;
-    border-radius: 3px;
-    color: red;
-    font-size: 16px;
-    padding: 8px 16px;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-right: 10px;
-}
-
-.btn-outline-danger:hover {
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
-}
-
-.btn.btn-outline-danger.btn-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .ola {
     display: flex;
     justify-content: center;
@@ -415,6 +391,5 @@ label {
 .olapapu {
   display: none;
 }
-
 
 
