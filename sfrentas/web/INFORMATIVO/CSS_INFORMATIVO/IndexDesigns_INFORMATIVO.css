@@ -2,6 +2,7 @@ body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background: linear-gradient(#e4ded0, #abccbd, #7dbeb8, #181619);
     }
     
     .letter {
@@ -29,7 +30,7 @@ body {
     }
     
  .column {
-    background-color: azure;
+    background: linear-gradient(#e4ded0, #abccbd, #7dbeb8, #181619);
     margin-bottom: 20px;
     padding: 20px;
     cursor: pointer;
@@ -43,6 +44,7 @@ body {
     flex: 1; /* Ajuste del ancho para que ocupe el espacio restante */
     margin-left: 20px;
     text-align: justify;
+    background: linear-gradient(#e4ded0, #abccbd, #7dbeb8, #181619);
 }
 
 .right-column {
@@ -50,7 +52,7 @@ body {
     margin-left: 20px;
     margin-right: 20px; /* Ajuste del margen derecho */
     padding: 20px;
-    background-color: #3399ff;
+    background-color: transparent; /* La columa derecha
     border: silver 2px solid;
     margin-top: 20px;
     height: 1070px; /* Ajuste de altura */
@@ -102,7 +104,7 @@ body {
 
 .search-box:hover input[type="text"],
 .search-box:hover button {
-    border-color: #007bff;
+    border-color: #B8E7F7;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
@@ -159,7 +161,7 @@ body {
     }
     
     .column {
-        background-color: azure;
+        background-color: black;
         margin-bottom: 50px;
         padding: 20px;
         cursor: pointer;
@@ -181,8 +183,7 @@ body {
     flex-basis: 18%; /* Ancho de la columna derecha */
     margin-left: 20px;
     padding: 20px;
-    background-color: #3399ff;
-    border: silver 2px solid;
+    background-color: transparent;
     margin: 20px;
     height: 1070px; /* Ajuste de altura */
 }
@@ -243,7 +244,7 @@ body {
 }
 
 .imagen-cuadro img {
-    width: 100%;
+    width: 116%;
     height: auto;
     border-radius: 8px;
 }
