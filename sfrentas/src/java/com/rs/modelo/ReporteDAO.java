@@ -35,6 +35,9 @@ public class ReporteDAO extends Conexion{
                 p.setCantreporte(rs.getInt(5));    
                 p.setImagen(rs.getString(6));
                 p.setFechasuceso(rs.getString(7));
+                p.setTurno(rs.getString(8));
+                p.setLugar(rs.getString(9));
+                p.setCorreou(rs.getString(10));
                 list.add(p);
             }
         } catch (Exception e) {
@@ -57,6 +60,9 @@ public class ReporteDAO extends Conexion{
                 p.setCantreporte(rs.getInt(5));   
                 p.setImagen(rs.getString(6));
                 p.setFechasuceso(rs.getString(7));
+                p.setTurno(rs.getString(8));
+                p.setLugar(rs.getString(9));
+                p.setCorreou(rs.getString(10));
             }
         } catch (Exception e) {
         }
@@ -78,6 +84,9 @@ public class ReporteDAO extends Conexion{
                 p.setCantreporte(rs.getInt(5));   
                 p.setImagen(rs.getString(6));
                 p.setFechasuceso(rs.getString(7));
+                p.setTurno(rs.getString(8));
+                p.setLugar(rs.getString(9));
+                p.setCorreou(rs.getString(10));
                 lista.add(p);
             }
         } catch (Exception e) {
@@ -87,7 +96,7 @@ public class ReporteDAO extends Conexion{
 
     
     public int AgregarNuevoReporte(Reporte p){
-        String sql="insert into reporte(idReporte, Nombres, Descripcion, Precio, Cantreporte, Imagen, Fechasuceso)values(?,?,?,?,?,?,?)";
+        String sql="insert into reporte(idReporte, Nombres, Descripcion, Precio, Cantreporte, Imagen, Fechasuceso, Turno, Lugar, Correou)values(?,?,?,?,?,?,?,?,?,?)";
         try {
             ps=getConnection().prepareStatement(sql);
             ps.setInt(1, p.getId());
@@ -97,6 +106,9 @@ public class ReporteDAO extends Conexion{
             ps.setInt(5, p.getCantreporte());
             ps.setString(6, p.getImagen());
             ps.setString(7, p.getFechasuceso());
+            ps.setString(8, p.getTurno());
+            ps.setString(9, p.getLugar());
+            ps.setString(10, p.getCorreou());
             ps.executeUpdate();
         } catch (Exception e) {
         }

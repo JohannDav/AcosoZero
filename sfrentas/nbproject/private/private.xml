@@ -3,9 +3,29 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Hermosa/.ssh/Proyecto/sfrentas/web/index.jsp</file>
-            <file>file:/C:/Users/Hermosa/.ssh/Proyecto/sfrentas/web/INFORMATIVO/index.html</file>
-            <file>file:/C:/Users/Hermosa/.ssh/Proyecto/sfrentas/web/INFORMATIVO/CSS_INFORMATIVO/IndexDesigns_INFORMATIVO.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/UsuarioDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/index.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/guardarBusqueda.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/OverallDesigns1.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/lista_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/ComprasDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/editar_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/ReporteDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/paquete/ReporteDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/Pago.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/agregar_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/Compra.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/DetalleCompra.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/Reporte.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/vistas/addReporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/Carrito.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/vistas/carrito.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/IndexDesigns.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/Buscar_Reporte_Agregar_Lista.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/Usuario.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/paquete/Reporteservlet.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/paquete/Reporte.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/vistas/compras.jsp</file>
         </group>
     </open-files>
 </project-private>

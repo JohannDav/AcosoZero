@@ -1,5 +1,14 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> <%@page
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page
    contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%-- Obtener la lista de usuarios directamente en esta página --%>
+<%
+    com.rs.modelo.UsuarioDAO dao = new com.rs.modelo.UsuarioDAO();
+    java.util.List<com.rs.modelo.Usuario> listaUsuarios = dao.listarUsuarios();
+    request.setAttribute("listaUsuarios", listaUsuarios);
+%>
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -60,8 +69,8 @@
                <li class="nav-item active">
                    <a class="nav-link" href="INFORMATIVO/index.html">
                      <div class="menu_index">
-                        <img src="img/informate2.png" />
-                        <img class="top rar" src="img/info1.png" />
+                        <img src="https://i.redd.it/wixrspq3mhc51.jpg" />
+                        <img class="top rar" src="img/AS1_1.png" />
                      </div> 
                   </a> <div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Informate
@@ -83,7 +92,7 @@
                   <a class="nav-link" href="./ReporteServlet?action=list">
                      <div class="menu_index">
                         <img src="img/reporte2.png" />
-                        <img class="top rar" src="img/informe1.png" />
+                        <img class="top rar" src="https://i.pinimg.com/736x/e8/6c/c6/e86cc64fd3aee67168ba578921c55dc9.jpg" />
                      </div>
                   </a><div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Informe
@@ -192,15 +201,36 @@
               <td>${p.getDescripcion()}</td>
               <td>${p.getFechasuceso()}</td>
             </tr>
+            <tr>
+              <td>${p.getTurno()}</td>
+              <td>${p.getLugar()}</td>
+            </tr>
           </table>
         </div>
       </div>
     </div>
   </c:forEach>
 </c:if>
-
-
-
+ <h2>Página de Inicio</h2>
+    <h3>Lista de Usuarios</h3>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Boleta</th>
+            <th>Nombres</th>
+            <th>Email</th>
+            <th>Dirección</th>
+        </tr>
+        <c:forEach var="usuario" items="${listaUsuarios}">
+            <tr>
+                <td>${usuario.id}</td>
+                <td>${usuario.boleta}</td>
+                <td>${usuario.nombres}</td>
+                <td>${usuario.email}</td>
+                <td>${usuario.direccion}</td>
+            </tr>
+        </c:forEach>
+    </table>
 
          </div>
       </div>
@@ -214,16 +244,39 @@
                          <div class="recuadro">
                          <img id="modalimage" src="" class="rounded-image"> </div>
                   </div>
-                  <div class="pr-2 pt-1">
-                     <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal">
-                     <span aria-hidden="true">&times;</span>
-                     </button>
-          </div>
+<style>
+    .pr-2 {
+        display: flex;
+        justify-content: flex-end; /* Alinear hacia la derecha */
+        margin-top: 5px; /* Espacio superior */
+        margin-right: 5px; /* Espacio derecho */
+    }
+
+    .close {
+        width: 40px;
+        height: 40px;
+        background-color: brown; /* Cambia a tu color preferido */
+        border: none; /* Elimina el borde para que sea solo el color de fondo */
+        border-radius: 5%; /* Aplica un radio de borde para que sea un círculo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .close span {
+        font-size: 24px; /* Tamaño del ícono de cierre */
+        color: white; /* Color del ícono */
+    }
+</style>
+
+<div class="pr-2 pt-1">
+    <button type="button" class="close" data-dismiss="modal">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
                       
-                  <div class="text-center">
+                  <div class="text-center1">
                      <img src="img/usuario.png" width="100" height="100" />
                   </div>
                    <div class="olapapu">
@@ -269,102 +322,185 @@ Registro
 
 </div>
 
-                  <div class="modal-body">
-                     <div class="tab-content" id="pills-tabContent">
-                        <!-- Iniciar Session -->
-                        <div
-                           class="tab-pane fade show active"
-                           id="pills-iniciar"
-                           role="tabpanel">
-                           <form action="Controlador">
-                              <div class="form-group">
-                                 <label>Email address</label>
-                                 <input
-                                    type="email"
-                                    name="txtemail"
-                                    class="form-control"
-                                    placeholder="email@example.com" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Password</label>
-                                 <input
-                                    type="password"
-                                    name="txtpass"
-                                    class="form-control"
-                                    placeholder="Password" />
-                              </div>
-                              <div class="ola"><button
-                                 type="submit"
-                                 name="accion"
-                                 value="Validar"
-                                 class="btn btn-outline-danger btn-block">
-                              Iniciar
-                              </button></div>
-                           </form>
-                        </div>
-                        <!-- Registrarse -->
-                        <div
-                           class="tab-pane fade"
-                           id="pills-registrar"
-                           role="tabpanel">
-                           <form action="Controlador">
-                              <div class="form-group">
-                                 <label>Nombres</label>
-                                 <input
-                                    type="text"
-                                    name="txtnom"
-                                    class="form-control"
-                                    placeholder="Nombre Apellido Paterno Apellido Materno" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Boleta</label>
-                                 <input
-                                    type="text"
-                                    maxlength="10"
-                                    name="txtboleta"
-                                    class="form-control"
-                                    placeholder="2023090001" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Grupo</label>
-                                 <input
-                                    type="text"
-                                    name="txtdire"
-                                    class="form-control"
-                                    placeholder="4IV9" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Correo Electrónico</label>
-                                 <input
-                                    type="email"
-                                    name="txtemail"
-                                    class="form-control"
-                                    placeholder="correoejemplo@gmail.com" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Contraseña</label>
-                                 <input
-                                    type="password"
-                                    name="txtpass"
-                                    class="form-control"
-                                    placeholder="n0m3l0" />
-                              </div><div class="ola">
-                              <button
-                                 type="submit"
-                                 name="accion"
-                                 value="Registrar"
-                                 class="btn btn-outline-danger btn-block">
-                              Crear Cuenta
-                              </button></div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
+<div class="modal-body">
+  <div class="tab-content" id="pills-tabContent">
+    <!-- Iniciar Session -->
+    <div class="tab-pane fade show active" id="pills-iniciar" role="tabpanel">
+      <form action="Controlador">
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" name="txtemail" class="form-control" placeholder="email@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="txtpass" class="form-control" placeholder="Password" />
+        </div>
+        <div class="ola">
+          <button type="submit" name="accion" value="Validar" class="btn btn-outline-danger btn-block">Iniciar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Registrarse -->
+    <div class="tab-pane fade" id="pills-registrar" role="tabpanel">
+      <form action="Controlador">
+        <div class="form-group">
+          <label>Nombres</label>
+          <input type="text" name="txtnom" class="form-control" placeholder="Nombre Apellido Paterno Apellido Materno" />
+        </div>
+        <div class="form-group">
+          <label>Boleta</label>
+          <input type="text" maxlength="10" name="txtboleta" class="form-control" placeholder="2023090001" />
+        </div>
+        <div class="form-group">
+          <label>Grupo</label>
+          <input type="text" name="txtdire" class="form-control" placeholder="4IV9" />
+        </div>
+        <div class="form-group">
+          <label>Correo Electrónico</label>
+          <input type="email" name="txtemail" class="form-control" placeholder="correoejemplo@gmail.com" />
+        </div>
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" name="txtpass" class="form-control" placeholder="n0m3l0" />
+        </div>
+        <div class="ola">
+          <button type="submit" name="accion" value="Registrar" class="btn btn-outline-danger btn-block">Crear Cuenta</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
                </div>
             </div>
          </div>
       </div>
-      
+      <style>
+          .text-center1 {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+          .modal-body {
+              padding: 20px;
+    max-height: 400px; /* Altura máxima del div */
+    overflow-y: auto; /* Habilitar el scroll vertical cuando sea necesario */
+}
+
+.btn-block {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+.tab-content {
+  background: #f4f7f8;
+  border-radius: 8px;
+  padding: 10px;
+  max-height: 100%; /* Ensure tab-content fits within modal-body */
+  overflow-y: auto; /* Enable vertical scrolling within tab-content */
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
+}
+</style>
       <script>
               
 $('.buy').click(function(){

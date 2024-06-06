@@ -97,6 +97,15 @@
                         <label for="descripcion">Descripción:</label>
                         <input type="text" name="descripcion" required />
                         <br />
+                        <label for="turno">Turno:</label>
+                        <input type="text" name="turno" required />
+                        <br />
+                        <label for="lugar">Lugar:</label>
+                        <input type="text" name="lugar" required />
+                        <br />
+                        <label for="correou">Correo:</label>
+                        <input type="text" name="correou" required />
+                        <br />
                         <label for="precio">Precio:</label>
                         <input type="number" step="0.01" name="precio" required />
                         <br />

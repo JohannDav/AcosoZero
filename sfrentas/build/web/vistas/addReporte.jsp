@@ -62,6 +62,14 @@
                                     <textarea name="txtDescripcion" class="form-control"></textarea>
                                 </div>
                                 <div class="form-group">
+                                    <label>Turno:</label>
+                                    <input type="text" name="txtTurno" class="form-control">
+                                </div>                     
+                                <div class="form-group">
+                                    <label>Lugar:</label>
+                                    <textarea name="txtLugar" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
                                     <label>Precio</label>
                                     <input type="text" name="txtPrecio" class="form-control">
                                 </div>
@@ -72,7 +80,11 @@
                                 <div class="form-group">
                                 <label>Imagen:</label>
                                     <input type="text" name="imagen" class="form-control"/>
-                                </div>  
+                                </div>
+                                <div class="form-group">
+                                <label>Correo:</label>
+                                    <input type="text" name="txtCorreou" class="form-control"/>
+                                </div>    
                                 <div class="form-group">
                                     <label>Fecha del suceso</label>
                                     <textarea name="txtFechasuceso" class="form-control"></textarea>

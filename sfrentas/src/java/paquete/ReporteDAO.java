@@ -48,8 +48,11 @@ public class ReporteDAO {
                 int cantreporte = resultSet.getInt("Cantreporte");
                 String imagen = resultSet.getString("Imagen");
                 String fechasuceso = resultSet.getString("Fechasuceso");
+                String turno = resultSet.getString("Turno");
+                String lugar = resultSet.getString("Lugar");
+                String correou = resultSet.getString("Correou");
 
-                Reporte reporte = new Reporte(idReporte, nombres, descripcion, precio, cantreporte, imagen, fechasuceso);
+                Reporte reporte = new Reporte(idReporte, nombres, descripcion, precio, cantreporte, imagen, fechasuceso, turno, lugar, correou);
                 reportes.add(reporte);
             }
         } catch (SQLException ex) {
@@ -75,8 +78,11 @@ public class ReporteDAO {
                 int cantreporte = resultSet.getInt("Cantreporte");
                 String imagen = resultSet.getString("Imagen");
                 String fechasuceso = resultSet.getString("Fechasuceso");
+                String turno = resultSet.getString("Turno");
+                String lugar = resultSet.getString("Lugar");
+                String correou = resultSet.getString("Correou");
 
-                reporte = new Reporte(idReporte, nombres, descripcion, precio, cantreporte, imagen, fechasuceso);
+                reporte = new Reporte(idReporte, nombres, descripcion, precio, cantreporte, imagen, fechasuceso, turno, lugar, correou);
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -87,7 +93,7 @@ public class ReporteDAO {
 
     public void agregarReporte(Reporte reporte) {
         try (Connection connection = getConnection()) {
-            String sql = "INSERT INTO reporte (Nombres, Descripcion, Precio, Cantreporte, Imagen, Fechasuceso) VALUES (?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO reporte (Nombres, Descripcion, Precio, Cantreporte, Imagen, Fechasuceso, Turno, Lugar, Correou) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, reporte.getNombres());
             statement.setString(2, reporte.getDescripcion());
@@ -95,6 +101,9 @@ public class ReporteDAO {
             statement.setInt(4, reporte.getCantreporte());
             statement.setString(5, reporte.getImagen());
             statement.setString(6, reporte.getFechasuceso());
+            statement.setString(7, reporte.getTurno());
+            statement.setString(8, reporte.getLugar());
+            statement.setString(9, reporte.getCorreou());
             statement.executeUpdate();
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -103,7 +112,7 @@ public class ReporteDAO {
 
     public void actualizarReporte(Reporte reporte) {
         try (Connection connection = getConnection()) {
-            String sql = "UPDATE reporte SET Nombres = ?, Descripcion = ?, Precio = ?, Cantreporte = ?, Imagen = ?, Fechasuceso = ? WHERE idReporte = ?";
+            String sql = "UPDATE reporte SET Nombres = ?, Descripcion = ?, Precio = ?, Cantreporte = ?, Imagen = ?, Fechasuceso = ?, Turno = ?, Lugar = ?, Correou = ? WHERE idReporte = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, reporte.getNombres());
             statement.setString(2, reporte.getDescripcion());
@@ -111,7 +120,10 @@ public class ReporteDAO {
             statement.setInt(4, reporte.getCantreporte());
             statement.setString(5, reporte.getImagen());
             statement.setString(6, reporte.getFechasuceso());
-            statement.setInt(7, reporte.getIdReporte());
+            statement.setString(7, reporte.getTurno());
+            statement.setString(8, reporte.getLugar());
+            statement.setString(9, reporte.getCorreou());
+            statement.setInt(10, reporte.getIdReporte());
             statement.executeUpdate();
         } catch (SQLException ex) {
             ex.printStackTrace();

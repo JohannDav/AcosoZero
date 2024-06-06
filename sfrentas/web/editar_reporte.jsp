@@ -121,6 +121,30 @@
                                 </div>
                                 <br />
                                 <div class="form-group">
+                                    <label for="turno"
+                                        >Turno:</label
+                                    >
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        name="turno"
+                                        value="${reporte.turno}"
+                                        required />
+                                </div>
+                                <br />
+                                <div class="form-group">
+                                    <label for="lugar"
+                                        >Lugar:</label
+                                    >
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        name="lugar"
+                                        value="${reporte.lugar}"
+                                        required />
+                                </div>
+                                <br />
+                                <div class="form-group">
                                     <label for="precio">Precio:</label>
                                     <input
                                         class="form-control"

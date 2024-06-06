@@ -148,10 +148,10 @@ public class GeneratePdfServlet extends HttpServlet {
             PdfPCell cellDescripcion = new PdfPCell(new Paragraph("Descripción"));
             PdfPCell cellDescripcionValor = new PdfPCell(new Paragraph(descripcion));
 
-            PdfPCell cellPrecio = new PdfPCell(new Paragraph("Precio"));
+            PdfPCell cellPrecio = new PdfPCell(new Paragraph("Lugar"));
             PdfPCell cellPrecioValor = new PdfPCell(new Paragraph(String.valueOf(precio)));
 
-            PdfPCell cellCantreporte = new PdfPCell(new Paragraph("Cantreporte"));
+            PdfPCell cellCantreporte = new PdfPCell(new Paragraph("Turno"));
             PdfPCell cellCantreporteValor = new PdfPCell(new Paragraph(String.valueOf(cantreporte)));
 
             tableReporte.addCell(cellDatosReporte);

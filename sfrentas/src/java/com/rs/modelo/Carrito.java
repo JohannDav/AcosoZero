@@ -11,11 +11,14 @@ public class Carrito {
     double precioCompra;
     int cantidad;
     double subTotal;
+    String turno;
+    String lugar;
+    String correou;
 
     public Carrito() {
     }
 
-    public Carrito(int item, int idReporte, String nombres, String imagen, String descripcion, String fechasuceso, double precioCompra, int cantidad, double subTotal) {
+    public Carrito(int item, int idReporte, String nombres, String imagen, String descripcion, String fechasuceso, double precioCompra, int cantidad, double subTotal, String turno, String lugar, String correou) {
         this.item = item;
         this.idReporte = idReporte;
         this.nombres = nombres;
@@ -25,6 +28,9 @@ public class Carrito {
         this.precioCompra = precioCompra;
         this.cantidad = cantidad;
         this.subTotal = subTotal;
+        this.turno = turno;
+        this.lugar = lugar;
+        this.correou = correou;
     }
 
     public int getItem() {
@@ -98,7 +104,28 @@ public class Carrito {
     public void setSubTotal(double subTotal) {
         this.subTotal = subTotal;
     }
+    
+    public String getTurno() {
+        return turno;
+    }
 
-    
-    
+    public void setTurno(String turno) {
+        this.turno = turno;
+    }
+
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+
+    public String getCorreou() {
+        return correou;
+    }
+
+    public void setCorreou(String correou) {
+        this.correou = correou;
+    }
 }

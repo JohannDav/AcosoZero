@@ -4,6 +4,8 @@ import com.rs.config.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UsuarioDAO {
 
@@ -33,6 +35,7 @@ public class UsuarioDAO {
         }
         return c;        
     }
+
     public int AgregarUsuario(Usuario c) {
         String sql="INSERT INTO usuario (Boleta, Nombres, Direccion, Email, Password)values(?,?,?,?,?)";        
         try {
@@ -47,5 +50,28 @@ public class UsuarioDAO {
         } catch (Exception e) {
         }
         return 1;        
+    }
+    
+    public List<Usuario> listarUsuarios() {
+        String sql = "SELECT * FROM usuario";
+        List<Usuario> lista = new ArrayList<>();
+        try {
+            con = cn.getConnection();
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Usuario u = new Usuario();
+                u.setId(rs.getInt(1));
+                u.setBoleta(rs.getString(2));
+                u.setNombres(rs.getString(3));
+                u.setDireccion(rs.getString(4));
+                u.setEmail(rs.getString(5));
+                u.setPass(rs.getString(6));
+                lista.add(u);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return lista;
     }
 }

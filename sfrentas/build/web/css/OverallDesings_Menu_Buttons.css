@@ -336,32 +336,30 @@ a.btn1:hover {
 .horizontal-list li:last-child {
     margin-right: 0; /* Eliminar margen derecho del último botón */}
 .container1 {
-    background: #0e1119;
-    height: 50%; /* Altura del 50% de la ventana */
-      width: 90%;
-flex-direction: column; /* Alineación vertical */
-    justify-content: center; /* Centrado vertical */
-    align-items: center; /* Centrado horizontal */
-    margin: 0 auto 50px auto; /* Centrado horizontal con 50px de margen inferior */
+    margin-top: 50px; /* Espacio de 50px desde la parte superior */
+    padding-top: 20px; /* Ajuste de padding para el contenido interno */
+    display: inline-block;
+    flex-direction: row; /* Cambiar a fila horizontal */
+    align-items: flex-start; /* Alinear contenido al principio */
 }
 
-.container2 {
+
+
+.container2 { margin-top: 50px; /* Espacio de 50px desde la parte superior */
+    padding-top: 20px; /* Ajuste de padding para el contenido interno */
     display: inline-block;
-    border: 2px solid yellow;
     max-width: 40%;
     width: 40%;
     margin-left:  3%; /* Ajustar el margen derecho */
     
-    overflow-x: auto; /* Agregar barra de desplazamiento horizontal si es necesario */
 }
 
-.col-sm-7 {
+.col-sm-7 { margin-top: 50px; /* Espacio de 50px desde la parte superior */
+    padding-top: 20px; /* Ajuste de padding para el contenido interno */
     display: inline-block;
-    border: 2px solid yellow;
-    max-width: 50%;
-    width: 55%;
+    max-width: 80%;
+    width: 85%;
     margin-right:3%; /* Ajustar el margen izquierdo */
-    overflow-x: auto; /* Agregar barra de desplazamiento horizontal si es necesario */
 }
 * {
   margin: 0;
@@ -502,7 +500,6 @@ image {
 
 
 .items3 {
-    background: #56d8e4;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

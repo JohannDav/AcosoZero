@@ -3,15 +3,18 @@ public class Reporte {
     private int idReporte;
     private String nombres;
     private String descripcion;
+    
     private double precio;
     private int cantreporte;
     private String imagen;
     private String fechasuceso;
-
+    private String turno;
+    private String lugar;
+    private String correou;
     public Reporte() {
     }
 
-    public Reporte(int idReporte, String nombres, String descripcion, double precio, int cantreporte, String imagen, String fechasuceso) {
+    public Reporte(int idReporte, String nombres, String descripcion, double precio, int cantreporte, String imagen, String fechasuceso, String turno, String lugar, String correou) {
         this.idReporte = idReporte;
         this.nombres = nombres;
         this.descripcion = descripcion;
@@ -19,6 +22,9 @@ public class Reporte {
         this.cantreporte = cantreporte;
         this.imagen = imagen;
         this.fechasuceso = fechasuceso;
+        this.turno = turno;
+        this.lugar = lugar;
+        this.correou = correou;
     }
 
     public int getIdReporte() {
@@ -75,5 +81,29 @@ public class Reporte {
 
     public void setFechasuceso(String fechasuceso) {
         this.fechasuceso = fechasuceso;
+    }
+    
+    public String getTurno() {
+        return turno;
+    }
+
+    public void setTurno(String turno) {
+        this.turno = turno;
+    }
+
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+    
+    public String getCorreou() {
+        return correou;
+    }
+
+    public void setCorreou(String correou) {
+        this.correou = correou;
     }    
 }

@@ -1,5 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> <%@page
 contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%-- Obtener la lista de usuarios directamente en esta página --%>
+<%
+    com.rs.modelo.UsuarioDAO dao = new com.rs.modelo.UsuarioDAO();
+    java.util.List<com.rs.modelo.Usuario> listaUsuarios = dao.listarUsuarios();
+    request.setAttribute("listaUsuarios", listaUsuarios);
+%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -150,15 +158,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
 
                       
                   </div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      
-         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-
-            </ul>
-         </div>
-      </nav>
+    
         <div class="container1 mt-5">
             <div class="row">
                 <div class="container2">
@@ -180,19 +180,50 @@ contentType="text/html" pageEncoding="UTF-8"%>
         </div>
         <div class="form-row">
             <div class="input-data">
-                <input type="number" name="precio" class="form-control" min="0" max="10000" step="10" required>
+    <input type="text" id="turno" name="turno" class="form-control" required readonly>
+    <div class="underline"></div>
+    <label for="turno">Turno:</label>
+</div>
+
+<select id="opciones">
+    <option value="Matutino">Matutino</option>
+    <option value="Vespertino">Vespertino</option>
+</select>
+
+<script>
+    document.getElementById('opciones').addEventListener('change', function() {
+        document.getElementById('turno').value = this.value;
+    });
+</script>
+
+
+            <div class="input-data">
+                <input type="text" name="lugar" class="form-control" required>
+                <div class="underline"></div>
+                <label for="lugar">Lugar:</label>
+            </div>
+        </div><div style="display: none">
+        <div class="form-row">
+            
+            <div class="input-data">
+                <input type="number" name="precio" class="form-control" value="1">
                 <div class="underline"></div>
                 <label for="precio">Precio:</label>
             </div>
             <div class="input-data">
-                <input type="number" name="cantreporte" class="form-control" min="0" max="1000" step="10" required>
+                <input type="number" name="cantreporte" class="form-control" value="1">
                 <div class="underline"></div>
                 <label for="cantreporte">Cantreporte:</label>
             </div>
-        </div>
+            <div class="input-data">
+        <input type="text" name="correou" class="form-control" value="${correo}">
+        <div class="underline"></div>
+        <label for="correou">Correo:</label>
+    </div>
+        </div></div>
         <div class="form-row">
             <div class="input-data">
-                <input type="text" name="imagen" class="form-control">
+                <input type="text" name="imagen" class="form-control" required>
                 <div class="underline"></div>
                 <label for="imagen">Imagen:</label>
             </div>
@@ -202,6 +233,8 @@ contentType="text/html" pageEncoding="UTF-8"%>
                 <label for="fechasuceso">Fecha del suceso:</label>
             </div>
         </div>
+
+
         <div class="form-row submit-btn">
             <div class="input-data">
                 <div class="inner"></div>
@@ -215,25 +248,25 @@ contentType="text/html" pageEncoding="UTF-8"%>
                     <table class="table1 table1-responsive">
                         <thead class="">
                             <tr class="text-center">
-                                <th>ID REPORTE</th>
+                                
                                 <th>NOMBRE</th>
                                 <th>DESCRIPCION</th>
-                                <th>PRECIO</th>
-                                <th>STOCK</th>
-                                <th>OLA</th>
+                                <th>Turno</th>
+                                <th>Lugar</th>
                                 <th>FECHA</th>
                                 <th>ACCIONES</th>
                             </tr>
                         </thead>
                         <tbody>
+
 <c:forEach var="reporte" items="${reportes}">
+        <c:if test="${reporte.correou == correo}">
+
     <tr class="text-center">
-        <td>${reporte.idReporte}</td>
         <td>${reporte.nombres}</td>
         <td>${reporte.descripcion}</td>
-        <td>${reporte.precio}</td>
-        <td>${reporte.cantreporte}</td>
-        <td>${reporte.imagen}</td>
+        <td>${reporte.turno}</td>
+        <td>${reporte.lugar}</td>
         <td>${reporte.fechasuceso}</td>
     <td class="d-flex">
 <ul class="horizontal-list">
@@ -275,14 +308,36 @@ contentType="text/html" pageEncoding="UTF-8"%>
 
 
 
-    </tr>
+    </tr>    </c:if>
+
 </c:forEach>
 
                         </tbody>
                     </table>
                 </div>
             </div>
-        </div>
+        </div><h2>Página de Inicio</h2>
+    <h3>Lista de Usuarios</h3>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Boleta</th>
+            <th>Nombres</th>
+            <th>Email</th>
+            <th>Dirección</th>
+        </tr>
+        <c:forEach var="usuario" items="${listaUsuarios}">
+            <c:if test="${usuario.email == correo}">
+                <tr>
+                    <td>${usuario.id}</td>
+                    <td>${usuario.boleta}</td>
+                    <td>${usuario.nombres}</td>
+                    <td>${usuario.email}</td>
+                    <td>${usuario.direccion}</td>
+                </tr>
+            </c:if>
+        </c:forEach>
+    </table>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
           
          <div class="modal-dialog modal-dialog-centered" role="document">
