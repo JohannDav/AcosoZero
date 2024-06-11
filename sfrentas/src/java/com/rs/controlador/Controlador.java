@@ -108,7 +108,7 @@ public class Controlador extends HttpServlet {
                     logueo = cl.getNombres();
                     correo = cl.getEmail();
                 }
-                request.getRequestDispatcher("Controlador?accion=carrito").forward(request, response);
+                request.getRequestDispatcher("Controlador?accion=home").forward(request, response);
                 break;
             case "Registrar":
                 String nom = request.getParameter("txtnom");

@@ -12,8 +12,9 @@ contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+              <link href="css/IndexDesigns.css" rel="stylesheet" type="text/css" />
         <link rel="icon" type="image/x-icon" href="AcosoZer0Batiz/Imagenes/favicon.ico">
-        <link href="css/OverallDesigns1.css" rel="stylesheet" type="text/css" />
+        <link href="css/OverallDesigns_2.css" rel="stylesheet" type="text/css" />
         <link href="css/DiesenoAgregar222.css" rel="stylesheet" type="text/css" />
         <link href="css/Buttons_Lista_Reporte.css" rel="stylesheet" type="text/css"/>
         <link href="css/OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />
@@ -95,7 +96,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
 </div>
 
 <div class="container">
-  <a href="./Controlador?accion=carrito">
+    <a href="INFORMATIVO/index.html">
 
     <main>
       <div class="items2">
@@ -337,133 +338,155 @@ contentType="text/html" pageEncoding="UTF-8"%>
                 </tr>
             </c:if>
         </c:forEach>
-    </table>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    </table>      
+    
+    
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        
           
          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="container col-lg-9">
                <div class="modal-content">
                    <div class="modalimage">
                          <div class="recuadro">
-                         <img id="modalimage" src="SOFTUX/IMAGENES/HALO2.jpg" class="rounded-image"> </div>
+                         <img id="modalimage" src="" class="rounded-image"> </div>
                   </div>
-                  <div class="pr-2 pt-1">
-                     <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal">
-                     <span aria-hidden="true">&times;</span>
-                     </button>
-          </div>
+<style>
+    .pr-2 {
+        display: flex;
+        justify-content: flex-end; /* Alinear hacia la derecha */
+        margin-top: 5px; /* Espacio superior */
+        margin-right: 5px; /* Espacio derecho */
+    }
+
+    .close {
+        width: 40px;
+        height: 40px;
+        background-color: brown; /* Cambia a tu color preferido */
+        border: none; /* Elimina el borde para que sea solo el color de fondo */
+        border-radius: 5%; /* Aplica un radio de borde para que sea un círculo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .close span {
+        font-size: 24px; /* Tamaño del ícono de cierre */
+        color: white; /* Color del ícono */
+    }
+</style>
+
+<div class="pr-2 pt-1">
+    <button type="button" class="close" data-dismiss="modal">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
                       
-                  <div class="text-center">
+                  <div class="text-center1">
                      <img src="img/usuario.png" width="100" height="100" />
                   </div>
-                  <div class="modal-header text-center">
-                     <ul class="nav nav-pills">
-                        <li class="ButtonFormSession">
-                           <button id="InicioSesionForm">Iniciar Sesisón</button>
-                        </li>
-                        <li class="ButtonFormSession">
-                           <button id="RegistroForm">Registro</button>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="modal-body">
-                     <div class="tab-content" id="pills-tabContent">
-                        <!-- Iniciar Session -->
-                        <div
-                           class="tab-pane fade show active"
-                           id="pills-iniciar"
-                           role="tabpanel">
-                           <form action="Controlador">
-                              <div class="form-group">
-                                 <label>Email address</label>
-                                 <input
-                                    type="email"
-                                    name="txtemail"
-                                    class="form-control"
-                                    placeholder="email@example.com" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Password</label>
-                                 <input
-                                    type="password"
-                                    name="txtpass"
-                                    class="form-control"
-                                    placeholder="Password" />
-                              </div>
-                              <div class="ola"><button
-                                 type="submit"
-                                 name="accion"
-                                 value="Validar"
-                                 class="btn btn-outline-danger btn-block">
-                              Iniciar
-                              </button></div>
-                           </form>
-                        </div>
-                        <!-- Registrarse -->
-                        <div
-                           class="tab-pane fade"
-                           id="pills-registrar"
-                           role="tabpanel">
-                           <form action="Controlador">
-                              <div class="form-group">
-                                 <label>Nombres</label>
-                                 <input
-                                    type="text"
-                                    name="txtnom"
-                                    class="form-control"
-                                    placeholder="Nombre Apellido Paterno Apellido Materno" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Boleta</label>
-                                 <input
-                                    type="text"
-                                    maxlength="10"
-                                    name="txtboleta"
-                                    class="form-control"
-                                    placeholder="2023090001" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Grupo</label>
-                                 <input
-                                    type="text"
-                                    name="txtdire"
-                                    class="form-control"
-                                    placeholder="4IV9" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Correo Electrónico</label>
-                                 <input
-                                    type="email"
-                                    name="txtemail"
-                                    class="form-control"
-                                    placeholder="correoejemplo@gmail.com" />
-                              </div>
-                              <div class="form-group">
-                                 <label>Contraseña</label>
-                                 <input
-                                    type="password"
-                                    name="txtpass"
-                                    class="form-control"
-                                    placeholder="n0m3l0" />
-                              </div><div class="ola">
-                              <button
-                                 type="submit"
-                                 name="accion"
-                                 value="Registrar"
-                                 class="btn btn-outline-danger btn-block">
-                              Crear Cuenta
-                              </button></div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
+                   <div class="olapapu">
+                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+    </filter>
+  </defs>
+</svg></div>
+<div class="modal-header text-center">
+<div class="buttons">
+<ul class="nav nav-pills">
+
+                           <li class="ButtonFormSession">
+
+  <button class="blob-btn" id="InicioSesionForm">
+Inicio    <span class="blob-btn__inner">
+      <span class="blob-btn__blobs">
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+      </span>
+    </span></button></li>
+  
+    <li class="ButtonFormSession">
+  <button class="blob-btn" id="RegistroForm">
+Registro
+<span class="blob-btn__inner">
+      <span class="blob-btn__blobs">
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+        <span class="blob-btn__blob"></span>
+      </span>
+    </span>
+  </button></li></ul>
+</div>
+
+
+</div>
+
+<div class="modal-body">
+  <div class="tab-content" id="pills-tabContent">
+    <!-- Iniciar Session -->
+    <div class="tab-pane fade show active" id="pills-iniciar" role="tabpanel">
+      <form action="Controlador">
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" name="txtemail" class="form-control" placeholder="email@example.com" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="txtpass" class="form-control" placeholder="Password" />
+        </div>
+        <div class="ola">
+          <button type="submit" name="accion" value="Validar" class="btn btn-outline-danger btn-block">Iniciar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Registrarse -->
+    <div class="tab-pane fade" id="pills-registrar" role="tabpanel">
+      <form action="Controlador">
+        <div class="form-group">
+          <label>Nombres</label>
+          <input type="text" name="txtnom" class="form-control" placeholder="Nombre Apellido Paterno Apellido Materno" />
+        </div>
+        <div class="form-group">
+          <label>Boleta</label>
+          <input type="text" maxlength="10" name="txtboleta" class="form-control" placeholder="2023090001" />
+        </div>
+        <div class="form-group">
+          <label>Grupo</label>
+          <input type="text" name="txtdire" class="form-control" placeholder="4IV9" />
+        </div>
+        <div class="form-group">
+          <label>Correo Electrónico</label>
+          <input type="email" name="txtemail" class="form-control" placeholder="correoejemplo@gmail.com" />
+        </div>
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" name="txtpass" class="form-control" placeholder="n0m3l0" />
+        </div>
+        <div class="ola">
+          <button type="submit" name="accion" value="Registrar" class="btn btn-outline-danger btn-block">Crear Cuenta</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
                </div>
             </div>
          </div>
-      </div>  <script>
+      </div>
+    
+    
+    
+    <script>
     var imagenes = [];
     for (var i = 1; i <= 60; i++) {
         var rutaImagen = "SOFTUX/IMAGENES/image" + i + ".jpg";
