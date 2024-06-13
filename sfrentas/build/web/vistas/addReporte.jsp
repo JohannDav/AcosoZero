@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="form-group">
                                 <label>Imagen:</label>
-                                    <input type="text" name="imagen" class="form-control"/>
+                                    <input type="text" name="txtImagen" class="form-control"/>
                                 </div>
                                 <div class="form-group">
                                 <label>Correo:</label>

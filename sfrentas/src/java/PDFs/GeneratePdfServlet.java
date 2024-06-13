@@ -1,5 +1,6 @@
 package PDFs;
 
+import com.itextpdf.text.BaseColor;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.io.IOException;
@@ -9,7 +10,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
+import com.itextpdf.text.FontFactory;
+import com.itextpdf.text.Image;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
@@ -21,6 +25,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Multipart;
@@ -55,126 +61,145 @@ public class GeneratePdfServlet extends HttpServlet {
         String descripcion = "";
         String precio = "";
         String cantreporte = "";
+        String turno = "";
+        String lugar = "";
+        String fechasuceso = "";
 
         String boleta = "";
         String nombresUsuario = "";
         String direccion = "";
         String email = "";
 
-        try (Connection connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword)) {
-            String sqlReporte = "SELECT Nombres, Descripcion, Precio, Cantreporte FROM reporte WHERE idReporte = ?";
-            
-            try (PreparedStatement statementReporte = connection.prepareStatement(sqlReporte)) {
-                statementReporte.setString(1, reportId);
+try (Connection connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword)) {
+    String sqlReporte = "SELECT Nombres, Descripcion, Precio, Cantreporte, Imagen, Turno, Lugar, Fechasuceso FROM reporte WHERE idReporte = ?";
+    
+    try (PreparedStatement statementReporte = connection.prepareStatement(sqlReporte)) {
+        statementReporte.setString(1, reportId);
 
-                try (ResultSet resultSetReporte = statementReporte.executeQuery()) {
-                    if (resultSetReporte.next()) {
-                        nombresReporte = resultSetReporte.getString("Nombres");
-                        descripcion = resultSetReporte.getString("Descripcion");
-                        precio = resultSetReporte.getString("Precio");
-                        cantreporte = resultSetReporte.getString("Cantreporte");
-                    }
-                }
+        try (ResultSet resultSetReporte = statementReporte.executeQuery()) {
+            if (resultSetReporte.next()) {
+                nombresReporte = resultSetReporte.getString("Nombres");
+                descripcion = resultSetReporte.getString("Descripcion");
+                precio = resultSetReporte.getString("Precio");
+                cantreporte = resultSetReporte.getString("Cantreporte");
+                turno = resultSetReporte.getString("Turno");
+                lugar = resultSetReporte.getString("Lugar");
+                fechasuceso = resultSetReporte.getString("Fechasuceso");
             }
+        }
+    }
 
-            String sqlUsuario = "SELECT Boleta, Nombres, Direccion, Email, Password FROM usuario WHERE Email = ?";
+    String sqlUsuario = "SELECT Boleta, Nombres, Direccion, Email, Password FROM usuario WHERE Email = ?";
 
-            try (PreparedStatement statementUsuario = connection.prepareStatement(sqlUsuario)) {
-                statementUsuario.setString(1, correo);
+    try (PreparedStatement statementUsuario = connection.prepareStatement(sqlUsuario)) {
+        statementUsuario.setString(1, correo);
 
-                try (ResultSet resultSetUsuario = statementUsuario.executeQuery()) {
-                    if (resultSetUsuario.next()) {
-                        boleta = resultSetUsuario.getString("Boleta");
-                        nombresUsuario = resultSetUsuario.getString("Nombres");
-                        direccion = resultSetUsuario.getString("Direccion");
-                        email = resultSetUsuario.getString("Email");
+        try (ResultSet resultSetUsuario = statementUsuario.executeQuery()) {
+            if (resultSetUsuario.next()) {
+                boleta = resultSetUsuario.getString("Boleta");
+                nombresUsuario = resultSetUsuario.getString("Nombres");
+                direccion = resultSetUsuario.getString("Direccion");
+                email = resultSetUsuario.getString("Email");
 
-                        String fileName = "Reporte_Acoso_" + nombresUsuario + "_" + boleta + ".pdf";
-                        response.setHeader("Content-Disposition", "attachment; filename=" + fileName);
-                    }
-                }
+                String fileName = "Reporte_Acoso_" + nombresUsuario + "_" + boleta + ".pdf";
+                response.setHeader("Content-Disposition", "attachment; filename=" + fileName);
             }
-        } catch (SQLException e) {
-            throw new ServletException("Error en la conexión a la base de datos", e);
         }
+    }
+} catch (SQLException e) {
+    throw new ServletException("Error en la conexión a la base de datos", e);
+}
 
-        byte[] pdfData = null;
+byte[] pdfData = null;
 
-        try {
-            Document document = new Document();
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            PdfWriter.getInstance(document, baos);
-            document.open();
+try {
+    Document document = new Document();
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    PdfWriter.getInstance(document, baos);
+    document.open();
 
-            Date fechaActual = new Date();
-            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
-            String fechaFormateada = formatoFecha.format(fechaActual);
+    Date fechaActual = new Date();
+    SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+    SimpleDateFormat formatoHora = new SimpleDateFormat("HH:mm:ss");
+    String fechaFormateada = formatoFecha.format(fechaActual);
+    String horaFormateada = formatoHora.format(fechaActual);
 
-            PdfPTable tableUsuario = new PdfPTable(4);
-            tableUsuario.setWidthPercentage(100);
+    // Agregar imagen
+    String imageUrl = "https://lh3.googleusercontent.com/drive-storage/AJQWtBN3dVlDW5VRD2QNqPyIbR2Yonw5a7gVa87aoFuBZBSDbBkHx8RSXkMmzjQUkPozXW1Hj9dSI0XiNLFk95N7ICdqiW5pXshiebiT0UIgjD-EjWk=h360";  // Proporciona la ruta a la imagen
+    Image image = Image.getInstance(imageUrl);
+    image.scaleToFit(100, 100);
+    image.setAbsolutePosition(50, 750);  // Ajusta la posición según sea necesario
+    document.add(image);
 
-            PdfPCell cellDatosUsuario = new PdfPCell(new Paragraph("Datos del Usuario"));
-            cellDatosUsuario.setColspan(2);
-            cellDatosUsuario.setHorizontalAlignment(Element.ALIGN_CENTER);
-            PdfPCell cellFecha = new PdfPCell(new Paragraph("Fecha"));
-            PdfPCell cellFechaValor = new PdfPCell(new Paragraph(fechaFormateada));
+    // Título del reporte
+    Paragraph titulo = new Paragraph("Reporte de Acoso",
+            FontFactory.getFont(FontFactory.HELVETICA_BOLD, 20, BaseColor.BLACK));
+    titulo.setAlignment(Element.ALIGN_CENTER);
+    titulo.setSpacingAfter(20);
+    document.add(titulo);
 
-            tableUsuario.addCell(cellDatosUsuario);
-            tableUsuario.addCell(cellFecha);
-            tableUsuario.addCell(cellFechaValor);
+    // Tabla de datos del usuario
+    PdfPTable tableUsuario = new PdfPTable(4);
+    tableUsuario.setWidthPercentage(100);
+    tableUsuario.setSpacingBefore(10f);
+    tableUsuario.setSpacingAfter(10f);
 
-            tableUsuario.addCell(new PdfPCell(new Paragraph("BOLETA:")));
-            tableUsuario.addCell(new PdfPCell(new Paragraph(boleta)));
-            tableUsuario.addCell(new PdfPCell(new Paragraph("Nombre:")));
-            tableUsuario.addCell(new PdfPCell(new Paragraph(nombresUsuario)));
+    PdfPCell cellDatosUsuario = new PdfPCell(new Paragraph("Datos del Usuario"));
+    cellDatosUsuario.setColspan(4);
+    cellDatosUsuario.setHorizontalAlignment(Element.ALIGN_CENTER);
+    cellDatosUsuario.setBackgroundColor(BaseColor.LIGHT_GRAY);
+    tableUsuario.addCell(cellDatosUsuario);
 
-            tableUsuario.addCell(new PdfPCell(new Paragraph("Dirección:")));
-            tableUsuario.addCell(new PdfPCell(new Paragraph(direccion)));
-            tableUsuario.addCell(new PdfPCell(new Paragraph("Email:")));
-            tableUsuario.addCell(new PdfPCell(new Paragraph(email)));
+    tableUsuario.addCell(new PdfPCell(new Paragraph("Fecha:")));
+    tableUsuario.addCell(new PdfPCell(new Paragraph(fechaFormateada)));
+    tableUsuario.addCell(new PdfPCell(new Paragraph("Hora:")));
+    tableUsuario.addCell(new PdfPCell(new Paragraph(horaFormateada)));
 
-            document.add(tableUsuario);
+    tableUsuario.addCell(new PdfPCell(new Paragraph("BOLETA:")));
+    tableUsuario.addCell(new PdfPCell(new Paragraph(boleta)));
+    tableUsuario.addCell(new PdfPCell(new Paragraph("Nombre:")));
+    tableUsuario.addCell(new PdfPCell(new Paragraph(nombresUsuario)));
 
-            Paragraph paragraphReporte = new Paragraph();
-            PdfPTable tableReporte = new PdfPTable(4);
-            tableReporte.setWidthPercentage(100);
+    tableUsuario.addCell(new PdfPCell(new Paragraph("Dirección:")));
+    tableUsuario.addCell(new PdfPCell(new Paragraph(direccion)));
+    tableUsuario.addCell(new PdfPCell(new Paragraph("Email:")));
+    tableUsuario.addCell(new PdfPCell(new Paragraph(email)));
+    document.add(tableUsuario);
 
-            PdfPCell cellDatosReporte = new PdfPCell(new Paragraph("Datos del Reporte"));
-            cellDatosReporte.setColspan(4);
-            cellDatosReporte.setHorizontalAlignment(Element.ALIGN_CENTER);
-            PdfPCell cellNombreReporte = new PdfPCell(new Paragraph("Nombre del Reporte"));
-            PdfPCell cellNombreReporteValor = new PdfPCell(new Paragraph(nombresReporte));
+    // Tabla de datos del reporte
+    PdfPTable tableReporte = new PdfPTable(4);
+    tableReporte.setWidthPercentage(100);
+    tableReporte.setSpacingBefore(10f);
+    tableReporte.setSpacingAfter(10f);
 
-            PdfPCell cellDescripcion = new PdfPCell(new Paragraph("Descripción"));
-            PdfPCell cellDescripcionValor = new PdfPCell(new Paragraph(descripcion));
+    PdfPCell cellDatosReporte = new PdfPCell(new Paragraph("Datos del Reporte"));
+    cellDatosReporte.setColspan(4);
+    cellDatosReporte.setHorizontalAlignment(Element.ALIGN_CENTER);
+    cellDatosReporte.setBackgroundColor(BaseColor.LIGHT_GRAY);
+    tableReporte.addCell(cellDatosReporte);
 
-            PdfPCell cellPrecio = new PdfPCell(new Paragraph("Lugar"));
-            PdfPCell cellPrecioValor = new PdfPCell(new Paragraph(String.valueOf(precio)));
+    tableReporte.addCell(new PdfPCell(new Paragraph("Nombre del Reporte:")));
+    tableReporte.addCell(new PdfPCell(new Paragraph(nombresReporte)));
+    tableReporte.addCell(new PdfPCell(new Paragraph("Descripción:")));
+    tableReporte.addCell(new PdfPCell(new Paragraph(descripcion)));
 
-            PdfPCell cellCantreporte = new PdfPCell(new Paragraph("Turno"));
-            PdfPCell cellCantreporteValor = new PdfPCell(new Paragraph(String.valueOf(cantreporte)));
+    tableReporte.addCell(new PdfPCell(new Paragraph("Turno:")));
+    tableReporte.addCell(new PdfPCell(new Paragraph(turno)));
+    tableReporte.addCell(new PdfPCell(new Paragraph("Lugar:")));
+    tableReporte.addCell(new PdfPCell(new Paragraph(lugar)));
 
-            tableReporte.addCell(cellDatosReporte);
-            tableReporte.addCell(cellNombreReporte);
-            tableReporte.addCell(cellNombreReporteValor);
-            tableReporte.addCell(cellDescripcion);
-            tableReporte.addCell(cellDescripcionValor);
-            tableReporte.addCell(cellPrecio);
-            tableReporte.addCell(cellPrecioValor);
-            tableReporte.addCell(cellCantreporte);
-            tableReporte.addCell(cellCantreporteValor);
+    tableReporte.addCell(new PdfPCell(new Paragraph("Fecha del Suceso:")));
+    tableReporte.addCell(new PdfPCell(new Paragraph(fechasuceso)));
+    document.add(tableReporte);
 
-            document.add(tableReporte);
-            document.add(paragraphReporte);
+    document.close();
+    pdfData = baos.toByteArray();
+} catch (DocumentException e) {
+    throw new IOException("Error al generar el PDF", e);
+}
 
-            document.close();
 
-            pdfData = baos.toByteArray();
-        } catch (Exception e) {
-            throw new ServletException("Error al generar el PDF", e);
-        }
-
-        sendEmailWithAttachment("morales.munoz.mily@gmail.com", "Reporte Generado", "Adjunto se encuentra el reporte generado.", pdfData);
+        sendEmailWithAttachment("gutierrez.flores.cristian.2006@gmail.com", "Reporte Generado", "Adjunto se encuentra el reporte generado.", pdfData);
 
         response.getOutputStream().write(pdfData);
     }

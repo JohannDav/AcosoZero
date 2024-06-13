@@ -12,17 +12,14 @@ contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-              <link href="css/IndexDesigns.css" rel="stylesheet" type="text/css" />
         <link rel="icon" type="image/x-icon" href="AcosoZer0Batiz/Imagenes/favicon.ico">
-        <link href="css/OverallDesigns_2.css" rel="stylesheet" type="text/css" />
+        <link href="css/OverallDesigns_3.css" rel="stylesheet" type="text/css" />
         <link href="css/DiesenoAgregar222.css" rel="stylesheet" type="text/css" />
-        <link href="css/Buttons_Lista_Reporte.css" rel="stylesheet" type="text/css"/>
-        <link href="css/OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />
+        <link href="css/1Buttons_Lista_Reporte.css" rel="stylesheet" type="text/css"/>
+        <link href="css/1OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />
         <title>Agregar</title>
     </head>
     <body>
-        
-
         <a class="navbar-brand" href="index.jsp">
             <img src="AcosoZer0Batiz/Imagenes/logo.png" alt="AcosoZer0Batiz">
       </a>
@@ -61,7 +58,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
             </div>
          </ul>
                   
-      </div>
+      </div><div id="indicador1">
                   <div class="contenedormenupagina">
                       
                       
@@ -88,10 +85,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
         <!-- Repeat for other items -->
       </div>
     </main>
-    <div class="options">
-      <button class="dark"></button>
-      <button class="light"></button>
-    </div>
+
   </a>
 </div>
 
@@ -118,10 +112,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
         <!-- Repeat for other items -->
       </div>
     </main>
-    <div class="options">
-      <button class="dark"></button>
-      <button class="light"></button>
-    </div>
+
   </a>
 </div>
 
@@ -149,19 +140,16 @@ contentType="text/html" pageEncoding="UTF-8"%>
         <!-- Repeat for other items -->
       </div>
     </main>
-    <div class="options">
-      <button class="dark"></button>
-      <button class="light"></button>
-    </div>
+
   </a>
 </div>
 
-
+</div>
                       
                   </div>
     
         <div class="container1 mt-5">
-            <div class="row">
+            <div class="row"><div id="indicador1">
                 <div class="container2">
     <div class="text">
         Agregar Reporte
@@ -315,7 +303,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
 
                         </tbody>
                     </table>
-                </div>
+                </div></div>
             </div>
         </div><h2>Página de Inicio</h2>
     <h3>Lista de Usuarios</h3>
@@ -341,7 +329,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
     </table>      
     
     
-    
+    <div id="indicador2">
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
         
           
@@ -350,37 +338,15 @@ contentType="text/html" pageEncoding="UTF-8"%>
                <div class="modal-content">
                    <div class="modalimage">
                          <div class="recuadro">
-                         <img id="modalimage" src="" class="rounded-image"> </div>
+                         <img id="modalimage" src="img/image1.jpg" class="rounded-image"> </div>
                   </div>
-<style>
-    .pr-2 {
-        display: flex;
-        justify-content: flex-end; /* Alinear hacia la derecha */
-        margin-top: 5px; /* Espacio superior */
-        margin-right: 5px; /* Espacio derecho */
-    }
 
-    .close {
-        width: 40px;
-        height: 40px;
-        background-color: brown; /* Cambia a tu color preferido */
-        border: none; /* Elimina el borde para que sea solo el color de fondo */
-        border-radius: 5%; /* Aplica un radio de borde para que sea un círculo */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .close span {
-        font-size: 24px; /* Tamaño del ícono de cierre */
-        color: white; /* Color del ícono */
-    }
-</style>
-
+<div id="indicador3">
 <div class="pr-2 pt-1">
+    
     <button type="button" class="close" data-dismiss="modal">
         <span aria-hidden="true">&times;</span>
-    </button>
+    </button></div>
 </div>
 
                       
@@ -398,7 +364,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
   </defs>
 </svg></div>
 <div class="modal-header text-center">
-<div class="buttons">
+<div class="buttons"><div id="btts">
 <ul class="nav nav-pills">
 
                            <li class="ButtonFormSession">
@@ -424,7 +390,7 @@ Registro
         <span class="blob-btn__blob"></span>
       </span>
     </span>
-  </button></li></ul>
+  </button></li></ul></div>
 </div>
 
 
@@ -485,11 +451,12 @@ Registro
       </div>
     
     
-    
-    <script>
+    </div>
+          <script>
+              
     var imagenes = [];
-    for (var i = 1; i <= 60; i++) {
-        var rutaImagen = "SOFTUX/IMAGENES/image" + i + ".jpg";
+    for (var i = 2; i <= 7; i++) {
+        var rutaImagen = "img/image" + i + ".jpg";
         imagenes.push(rutaImagen);
     }
     
@@ -503,10 +470,9 @@ Registro
             indice = 0;
         }
     }, 3000);
-    
-    
-    
-    
+</script>
+    <script>
+
     /*
  * Noel Delgado | @pixelia_me
  */
@@ -807,4 +773,3 @@ document.addEventListener('DOMContentLoaded', function () {
       </script>
     </body>
 </html>
-

@@ -20,6 +20,29 @@ body {
         background-position: 0% 50%;
     }
 }
+#indicador3{
+    .pr-2 {
+        display: flex;
+        justify-content: flex-end; /* Alinear hacia la derecha */
+        margin-top: 5px; /* Espacio superior */
+        margin-right: 5px; /* Espacio derecho */
+    }
+
+    .close {
+        width: 40px;
+        height: 40px;
+        background-color: brown; /* Cambia a tu color preferido */
+        border: none; /* Elimina el borde para que sea solo el color de fondo */
+        border-radius: 5%; /* Aplica un radio de borde para que sea un círculo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .close span {
+        font-size: 24px; /* Tamaño del ícono de cierre */
+        color: white; /* Color del ícono */
+    }}
 
 .dropdown-container {
     position: absolute;
@@ -117,15 +140,7 @@ body {
     padding: 15px;
 }
 
-.close {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-}
 
-.close:hover {
-    color: #ccc;
-}
 
 .nav-pills {
     list-style-type: none;
@@ -269,10 +284,23 @@ label {
   padding: 0;
 }
 
-.buttons {
+
+@supports (filter: url('#goo')) {
+  .blob-btn__blob {
+    transform: translate3d(0, 150%, 0) scale(1.4);
+  }
+}
+@supports (filter: url('#goo')) {
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+#btts{
+    .buttons {
   margin-top: 50px;
   text-align: center;
 }
+
 
 .blob-btn {
   z-index: 1;
@@ -352,11 +380,6 @@ label {
   transition: transform 0.45s;
 }
 
-@supports (filter: url('#goo')) {
-  .blob-btn__blob {
-    transform: translate3d(0, 150%, 0) scale(1.4);
-  }
-}
 
 .blob-btn__blob:nth-child(1) {
   left: 0;
@@ -382,10 +405,6 @@ label {
   transform: translateZ(0) scale(1.7);
 }
 
-@supports (filter: url('#goo')) {
-  .blob-btn:hover .blob-btn__blob {
-    transform: translateZ(0) scale(1.4);
-  }
 }
 /* Estilo para el SVG */
 .olapapu {
@@ -429,7 +448,7 @@ label {
   max-height: 100%; /* Ensure tab-content fits within modal-body */
   overflow-y: auto; /* Enable vertical scrolling within tab-content */
 }
-
+#indicador2{
 form {
   max-width: 300px;
   margin: 10px auto;
@@ -472,6 +491,7 @@ select {
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 4px 8px 0;
+}
 }
 
 select {

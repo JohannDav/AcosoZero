@@ -76,6 +76,7 @@ a.btn1, a.btn1 span {
 }
 
 a.btn1 .text {
+    transform: translateX(15px);
     font-weight: bold;
 }
 

@@ -82,111 +82,71 @@
             </div>
         </nav>
 
-        <div class="container1 mt-5">
-            <div class="row">
-                <div class="col1-sm1-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Editar Reporte</h3>
+        <div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Editar Reporte</h3>
+                </div>
+                <div class="card-body">
+                    <form action="ReporteServlet?action=update" method="POST">
+                        <div class="form-group">
+                            <input class="form-control" type="hidden" name="idReporte" value="${param.idReporte}" />
+                            <label for="nombres">Nombres:</label>
+                            <input class="form-control" type="text" name="nombres" value="${reporte.nombres}" required />
                         </div>
-                        <div class="card-body">
-                            <form
-                                action="ReporteServlet?action=update"
-                                method="POST">
-                                <div class="form-group">
-                                    <input
-                                        class="form-control"
-                                        type="hidden"
-                                        name="idReporte"
-                                        value="${param.idReporte}" />
-                                    <label for="nombres">Nombres:</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        name="nombres"
-                                        value="${reporte.nombres}"
-                                        required />
-                                </div>
-                                <br />
-                                <div class="form-group">
-                                    <label for="descripcion"
-                                        >Descripción:</label
-                                    >
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        name="descripcion"
-                                        value="${reporte.descripcion}"
-                                        required />
-                                </div>
-                                <br />
-                                <div class="form-group">
-                                    <label for="turno"
-                                        >Turno:</label
-                                    >
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        name="turno"
-                                        value="${reporte.turno}"
-                                        required />
-                                </div>
-                                <br />
-                                <div class="form-group">
-                                    <label for="lugar"
-                                        >Lugar:</label
-                                    >
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        name="lugar"
-                                        value="${reporte.lugar}"
-                                        required />
-                                </div>
-                                <br />
-                                <div class="form-group">
-                                    <label for="precio">Precio:</label>
-                                    <input
-                                        class="form-control"
-                                        type="number"
-                                        step="0.01"
-                                        name="precio"
-                                        value="${reporte.precio}"
-                                        required />
-                                </div>
-                                <br />
-                                <div class="form-group">
-                                    <label for="cantreporte">Cantreporte:</label>
-                                    <input
-                                        class="form-control"
-                                        type="number"
-                                        name="cantreporte"
-                                        value="${reporte.cantreporte}"
-                                        required />
-                                </div>
-                                <br />
-                                <div class="form-group">
-                                    <label for="cantreporte">Imagen:</label>
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        name="imagen"
-                                        value="${reporte.imagen}"
-                                        required />
-                                </div>
-                                <br />
-                                <div class="form-group">
-                                    <input
-                                        class="btn btn-danger"
-                                        type="submit"
-                                        value="Actualizar" />
-                                </div>
-                            </form>
+                        <br />
+                        <div class="form-group">
+                            <label for="descripcion">Descripción:</label>
+                            <input class="form-control" type="text" name="descripcion" value="${reporte.descripcion}" required />
                         </div>
-                    </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="turno">Turno:</label>
+                            <input class="form-control" type="text" name="turno" value="${reporte.turno}" required />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="lugar">Lugar:</label>
+                            <input class="form-control" type="text" name="lugar" value="${reporte.lugar}" required />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="correou">Correo:</label>
+                            <input class="form-control" type="text" name="correou" value="${reporte.correou}" required />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="precio">Precio:</label>
+                            <input class="form-control" type="number" name="precio" value="${reporte.precio}" required />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="cantreporte">Cantidad Reporte:</label>
+                            <input class="form-control" type="number" name="cantreporte" value="${reporte.cantreporte}" required />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="imagen">Imagen:</label>
+                            <input class="form-control" type="text" name="imagen" value="${reporte.imagen}" required />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <label for="fechasuceso">Fecha:</label>
+                            <input class="form-control" type="date" name="fechasuceso" value="${reporte.fechasuceso}" required />
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <input class="btn btn-danger noselect" type="submit" value="Actualizar" />
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
 
 
         <script src="js/index.js" type="text/javascript"></script>

@@ -242,7 +242,7 @@
                <div class="modal-content">
                    <div class="modalimage">
                          <div class="recuadro">
-                         <img id="modalimage" src="" class="rounded-image"> </div>
+                         <img id="modalimage" src="img/image1.jpg" class="rounded-image"> </div>
                   </div>
 <style>
     .pr-2 {
@@ -388,7 +388,7 @@ $('.remove').click(function(){
 
 
     var imagenes = [];
-    for (var i = 1; i <= 7; i++) {
+    for (var i = 2; i <= 7; i++) {
         var rutaImagen = "img/image" + i + ".jpg";
         imagenes.push(rutaImagen);
     }
