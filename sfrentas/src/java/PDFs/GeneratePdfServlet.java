@@ -47,8 +47,8 @@ public class GeneratePdfServlet extends HttpServlet {
     private static final String jdbcUsername = "root";
     private static final String jdbcPassword = "n0m3l0";
     
-    private static final String fromEmail = "acosozer0batiz@gmail.com";
-    private static final String emailPassword = "zhmakgmcvqtsjqoj";
+    private static final String fromEmail = "acosozerbatiz@gmail.com";
+    private static final String emailPassword = "pmfeqchcbpftosix";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -125,11 +125,7 @@ try {
     String horaFormateada = formatoHora.format(fechaActual);
 
     // Agregar imagen
-    String imageUrl = "https://lh3.googleusercontent.com/drive-storage/AJQWtBN3dVlDW5VRD2QNqPyIbR2Yonw5a7gVa87aoFuBZBSDbBkHx8RSXkMmzjQUkPozXW1Hj9dSI0XiNLFk95N7ICdqiW5pXshiebiT0UIgjD-EjWk=h360";  // Proporciona la ruta a la imagen
-    Image image = Image.getInstance(imageUrl);
-    image.scaleToFit(100, 100);
-    image.setAbsolutePosition(50, 750);  // Ajusta la posición según sea necesario
-    document.add(image);
+
 
     // Título del reporte
     Paragraph titulo = new Paragraph("Reporte de Acoso",

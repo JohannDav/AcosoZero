@@ -66,7 +66,8 @@ CREATE TABLE `reporte` (
   `Imagen` VARCHAR(255) NOT NULL,
   `Turno` varchar(255) DEFAULT NULL,
   `Lugar` varchar(255) DEFAULT NULL,  
-  `Fechasuceso` VARCHAR(255) NOT NULL
+  `Fechasuceso` VARCHAR(255) NOT NULL,
+  `Correou` varchar(255) DEFAULT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Indices de la tabla `cliente`

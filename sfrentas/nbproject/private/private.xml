@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>web/css/OverallDesigns_2.css</url>
+            <bookmark id="1">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/info1.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/ComprasDAO.java</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/PDFs/GeneratePdfServlet.java</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/empresa2.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/image8.jpg</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/Reporte.java</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/QW1.jpg</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/image2.jpg</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/reporte2.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/controlador/Controlador.java</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/vistas/carrito.jsp</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/AcosoZer0Batiz/CVs/CV_Cristian.html</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/image6.jpg</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/controlador/ListarUsuariosServlet.java</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/IN1.jpg</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/Buscar_Reportes1.css</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/violentometro1.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/lista_reporte.jsp</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/image3.jpg</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/imagen1.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/Carrito.css</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/informate2.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/AS1.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/AS1_1.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/usuario.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/Buscar_Reporte_Agregar_Lista.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/paquete/Reporte.java</file>
             <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/index.jsp</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/informe1.png</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/image1.jpg</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/1Buttons_Lista_Reporte.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/IndexDesigns.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/vistas/addReporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/Buscar_Reportes12.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/paquete/ReporteDAO.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/agregar_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/OverallDesigns001.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/Carrito.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/editar_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/1OverallDesings_Menu_Buttons.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/OverallDesigns_3.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/paquete/Reporteservlet.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/ReporteDAO.java</file>
             <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/guardarBusqueda.jsp</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/Carrito.java</file>
-            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/img/image7.jpg</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/css/DiesenoAgregar222.css</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/web/lista_reporte.jsp</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/PDFs/GeneratePdfServlet.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/modelo/Reporte.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/controlador/ListarUsuariosServlet.java</file>
+            <file>file:/C:/Users/PC%20FERRET/.ssh/Proyecto/sfrentas/src/java/com/rs/controlador/Controlador.java</file>
         </group>
     </open-files>
 </project-private>

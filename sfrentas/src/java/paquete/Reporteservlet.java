@@ -133,7 +133,7 @@ public class Reporteservlet extends HttpServlet {
             statement.setString(7, turno);
             statement.setString(8, lugar);
             statement.setString(9, correou);
-            statement.setInt(7, idReporte);
+            statement.setInt(10, idReporte);
             statement.executeUpdate();
         } catch (SQLException ex) {
             ex.printStackTrace();

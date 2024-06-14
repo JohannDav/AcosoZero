@@ -122,7 +122,7 @@ public class Controlador extends HttpServlet {
                 cl.setPass(pas);
                 cl.setDireccion(dir);
                 cldao.AgregarUsuario(cl);
-                request.getRequestDispatcher("Controlador?accion=carrito").forward(request, response);
+                request.getRequestDispatcher("Controlador?accion=home").forward(request, response);
                 break;
             case "Nuevo":
                 listaReportes = new ArrayList();

@@ -103,7 +103,7 @@ public class Reporte {
     }
 
     public String getCorreou() {
-        return lugar;
+        return correou;
     }
 
     public void setCorreou(String correou) {

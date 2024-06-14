@@ -77,7 +77,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
             </defs>
             <text class="svg-text" x="50%" y="50%" dy=".3em">Inicio</text>
             <g clip-path="url(#clip-1)">
-              <image xlink:href="https://th.bing.com/th/id/OIP.PT4l4YI8K-zxwRwWVpqstQAAAA?rs=1&pid=ImgDetMain" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+              <image xlink:href="https://static.vecteezy.com/system/resources/previews/004/693/027/original/flat-design-house-icon-free-free-vector.jpg" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
               <text class="svg-masked-text" x="50%" y="50%" dy=".3em">Inicio</text>
             </g>
           </svg>
@@ -104,7 +104,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
             </defs>
             <text class="svg-text" x="50%" y="50%" dy=".3em">Informate</text>
             <g clip-path="url(#clip-2)">
-              <image xlink:href="https://store-images.s-microsoft.com/image/apps.50670.13727851868390641.c9cc5f66-aff8-406c-af6b-440838730be0.d205e025-5444-4eb1-ae46-571ae6895928?q=90&w=480&h=270" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+              <image xlink:href="https://st2.depositphotos.com/4410397/7230/v/450/depositphotos_72302047-stock-illustration-magnifier-icon.jpg" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
               <text class="svg-masked-text" x="50%" y="50%" dy=".3em">Informate</text>
             </g>
           </svg>
@@ -132,7 +132,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
             </defs>
             <text class="svg-text" x="50%" y="50%" dy=".3em">AcosoZer0Batiz</text>
             <g clip-path="url(#clip-3)">
-              <image xlink:href="https://store-images.s-microsoft.com/image/apps.50670.13727851868390641.c9cc5f66-aff8-406c-af6b-440838730be0.d205e025-5444-4eb1-ae46-571ae6895928?q=90&w=480&h=270" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+              <image xlink:href="https://lh3.googleusercontent.com/drive-storage/AJQWtBP5ti00V_3DtLgW-zZWEYmOBVGhj6xC41JNJPK2AGkvev56afcqnLf4-NxrHahKy947O7iaBTo9ihPMPDLx1Vh2b6ND2Dxt4fSz-LG8xsO-kDY=h360" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
               <text class="svg-masked-text" x="50%" y="50%" dy=".3em">AcosoZer0Batiz</text>
             </g>
           </svg>
@@ -305,28 +305,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
                     </table>
                 </div></div>
             </div>
-        </div><h2>Página de Inicio</h2>
-    <h3>Lista de Usuarios</h3>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Boleta</th>
-            <th>Nombres</th>
-            <th>Email</th>
-            <th>Dirección</th>
-        </tr>
-        <c:forEach var="usuario" items="${listaUsuarios}">
-            <c:if test="${usuario.email == correo}">
-                <tr>
-                    <td>${usuario.id}</td>
-                    <td>${usuario.boleta}</td>
-                    <td>${usuario.nombres}</td>
-                    <td>${usuario.email}</td>
-                    <td>${usuario.direccion}</td>
-                </tr>
-            </c:if>
-        </c:forEach>
-    </table>      
+        </div>   
     
     
     <div id="indicador2">

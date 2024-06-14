@@ -17,7 +17,7 @@
       <link href="css/IndexDesigns.css" rel="stylesheet" type="text/css" />
       <link href="css/OverallDesigns001.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons&quot; rel="stylesheet">
-      <link href="css/Buscar_Reportes1.css" rel="stylesheet" type="text/css" />
+      <link href="css/Buscar_Reportes12.css" rel="stylesheet" type="text/css" />
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
       <title> AcosoZer0Batiz </title>
@@ -69,8 +69,8 @@
                <li class="nav-item active">
                    <a class="nav-link" href="INFORMATIVO/index.html">
                      <div class="menu_index">
-                        <img src="https://i.redd.it/wixrspq3mhc51.jpg" />
-                        <img class="top rar" src="img/AS1_1.png" />
+                        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPbWAyeuDJRlGgqliDdXrA-9jUt1unA_v8_KoQ1K1VOgAZ668BbKIzcG7qNPuRj9sg-IFmHLenjnnPI0TvxqovtsOQRNobz_VzhGYQOjavkog=w1903-h911" />
+                        <img class="top rar" src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPuTPEUaMWdrCUrgBgkHeb-6v6dGiJyEQkr4vzKB_zeFX66Y0QYzkM0XB8gza2B3_JhPFK1ocEKyzxbN6aj_4_q-QTIt_oHRJJ89irQjxQnyQ=w1903-h911" />
                      </div> 
                   </a> <div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Informate
@@ -92,10 +92,10 @@
                   <a class="nav-link" href="./ReporteServlet?action=list">
                      <div class="menu_index">
                         <img src="img/reporte2.png" />
-                        <img class="top rar" src="https://i.pinimg.com/736x/e8/6c/c6/e86cc64fd3aee67168ba578921c55dc9.jpg" />
+                        <img class="top rar" src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMhu6KXk0ULUN7UwI3FgyMF0GvHIwYnQSvWwtu80cHIPKRS0jWU0G3CZJaAG_z-ybPU_BdmXvPQfhJ1A2gcH7Hi0LN5E5Njsi4rFH3nJtYGfQ=h360" />
                      </div>
                   </a><div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
-    Informe
+    Reportes
   </div>
                </li>
             </ul>
@@ -168,7 +168,6 @@
   <c:forEach items="${reportes}" var="p">
     <div class="wrapper" data-product-name="${p.getNombres()}" data-product-description="${p.getDescripcion()}" data-product-date="${p.getFechasuceso()}">
       <div class="container">
-        <div class="top"></div>
         <div class="bottom">
           <div class="left">
             <div class="details">
@@ -195,15 +194,10 @@
           <table>
             <tr>
               <th>Descripción</th>
-              <th>Fecha</th>
             </tr>
             <tr>
               <td>${p.getDescripcion()}</td>
-              <td>${p.getFechasuceso()}</td>
-            </tr>
-            <tr>
-              <td>${p.getTurno()}</td>
-              <td>${p.getLugar()}</td>
+              <td>${p.getCorreou()}</td>
             </tr>
           </table>
         </div>
@@ -211,26 +205,7 @@
     </div>
   </c:forEach>
 </c:if>
- <h2>Página de Inicio</h2>
-    <h3>Lista de Usuarios</h3>
-    <table border="1">
-        <tr>
-            <th>ID</th>
-            <th>Boleta</th>
-            <th>Nombres</th>
-            <th>Email</th>
-            <th>Dirección</th>
-        </tr>
-        <c:forEach var="usuario" items="${listaUsuarios}">
-            <tr>
-                <td>${usuario.id}</td>
-                <td>${usuario.boleta}</td>
-                <td>${usuario.nombres}</td>
-                <td>${usuario.email}</td>
-                <td>${usuario.direccion}</td>
-            </tr>
-        </c:forEach>
-    </table>
+
 
          </div>
       </div>
