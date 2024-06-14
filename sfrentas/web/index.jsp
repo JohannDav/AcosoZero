@@ -47,12 +47,7 @@
                   data-target="#myModal"
                   >${correo}</a
                   >
-               <div class="dropdown-divider"></div>
-               <a
-                  class="dropdown-item"
-                  href="Controlador?accion=MisCompras"
-                  >Mis Compras</a
-                  >
+               
                <div class="dropdown-divider"></div>
                <a
                   class="dropdown-item"
@@ -69,8 +64,8 @@
                <li class="nav-item active">
                    <a class="nav-link" href="INFORMATIVO/index.html">
                      <div class="menu_index">
-                        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPbWAyeuDJRlGgqliDdXrA-9jUt1unA_v8_KoQ1K1VOgAZ668BbKIzcG7qNPuRj9sg-IFmHLenjnnPI0TvxqovtsOQRNobz_VzhGYQOjavkog=w1903-h911" />
-                        <img class="top rar" src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPuTPEUaMWdrCUrgBgkHeb-6v6dGiJyEQkr4vzKB_zeFX66Y0QYzkM0XB8gza2B3_JhPFK1ocEKyzxbN6aj_4_q-QTIt_oHRJJ89irQjxQnyQ=w1903-h911" />
+                         <img src="img/IND2.jpg" />
+                        <img class="top rar" src="img/IND1.jpg" />
                      </div> 
                   </a> <div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Informate
@@ -81,8 +76,8 @@
                      <i class="fas fa-cart-plus">
                      </i>
                      <div class="menu_index">
-                        <img src="img/empresa2.png" />
-                        <img class="top rar" src="img/empresa1.png"/>
+                         <img src="img/IND4.jpg.png" />
+                        <img class="top rar" src="img/IND3.jpg"/>
                      </div>
                   </a><div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Empresa
@@ -91,8 +86,8 @@
                <li class="nav-item active">
                   <a class="nav-link" href="./ReporteServlet?action=list">
                      <div class="menu_index">
-                        <img src="img/reporte2.png" />
-                        <img class="top rar" src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMhu6KXk0ULUN7UwI3FgyMF0GvHIwYnQSvWwtu80cHIPKRS0jWU0G3CZJaAG_z-ybPU_BdmXvPQfhJ1A2gcH7Hi0LN5E5Njsi4rFH3nJtYGfQ=h360" />
+                         <img src="img/IND6.png" />
+                        <img class="top rar" src="img/IND5.png" />
                      </div>
                   </a><div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Reportes

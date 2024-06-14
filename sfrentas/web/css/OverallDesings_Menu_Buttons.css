@@ -73,7 +73,8 @@ form .form-row .textarea {
 .textarea textarea:valid ~ label {
     transform: translateY(-20px);
     font-size: 14px;
-    color: #3498db;
+    color: #BA9696;
+
 }
 
 .textarea textarea {
@@ -103,11 +104,11 @@ form .form-row .textarea {
 }
 
 .input-data .underline:before {
-    position: absolute;
+    display: block;
     content: "";
     height: 2px;
     width: 100%;
-    background: #3498db;
+    background: #BA9696;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;

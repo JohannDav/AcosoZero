@@ -16,7 +16,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
         <link href="css/OverallDesigns_3.css" rel="stylesheet" type="text/css" />
         <link href="css/DiesenoAgregar222.css" rel="stylesheet" type="text/css" />
         <link href="css/1Buttons_Lista_Reporte.css" rel="stylesheet" type="text/css"/>
-        <link href="css/1OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />
+        <link href="css/OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />
         <title>Editar Reporte</title>
     </head>
     <body>
@@ -43,12 +43,8 @@ contentType="text/html" pageEncoding="UTF-8"%>
                   data-target="#myModal"
                   >${correo}</a
                   >
-               <div class="dropdown-divider"></div>
-               <a
-                  class="dropdown-item"
-                  href="Controlador?accion=MisCompras"
-                  >Mis Compras</a
-                  >
+               
+               
                <div class="dropdown-divider"></div>
                <a
                   class="dropdown-item"
@@ -77,7 +73,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
             </defs>
             <text class="svg-text" x="50%" y="50%" dy=".3em">Inicio</text>
             <g clip-path="url(#clip-1)">
-              <image xlink:href="https://th.bing.com/th/id/OIP.PT4l4YI8K-zxwRwWVpqstQAAAA?rs=1&pid=ImgDetMain" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+              <image xlink:href="https://lh3.googleusercontent.com/drive-storage/AJQWtBOlDQHOKAHqzSK7KuIUJiJ4GDWLKqeysuMuf2B6OlUt37sU0QzEjnEZ5EYyRRKdnbUDFf9MQ2b_ABGc3cHYtTG-Y9yHY_UHvg0i9uxbTcqhBw=w1903-h911" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
               <text class="svg-masked-text" x="50%" y="50%" dy=".3em">Inicio</text>
             </g>
           </svg>
@@ -104,7 +100,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
             </defs>
             <text class="svg-text" x="50%" y="50%" dy=".3em">Informate</text>
             <g clip-path="url(#clip-2)">
-              <image xlink:href="https://store-images.s-microsoft.com/image/apps.50670.13727851868390641.c9cc5f66-aff8-406c-af6b-440838730be0.d205e025-5444-4eb1-ae46-571ae6895928?q=90&w=480&h=270" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+              <image xlink:href="https://lh3.googleusercontent.com/drive-storage/AJQWtBML4sywpu1ZVS4KMrNmTugmC2ZEIX_2AXAsJHjNSARjENX7xSCTI7eDO1hsEDuH7Iw3eQPtORlekEEnCrX87fpCtBHv09dkfkje7uw_Z-JBQw=w1903-h911" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
               <text class="svg-masked-text" x="50%" y="50%" dy=".3em">Informate</text>
             </g>
           </svg>
@@ -132,7 +128,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
             </defs>
             <text class="svg-text" x="50%" y="50%" dy=".3em">AcosoZer0Batiz</text>
             <g clip-path="url(#clip-3)">
-              <image xlink:href="https://store-images.s-microsoft.com/image/apps.50670.13727851868390641.c9cc5f66-aff8-406c-af6b-440838730be0.d205e025-5444-4eb1-ae46-571ae6895928?q=90&w=480&h=270" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
+              <image xlink:href="https://lh3.googleusercontent.com/drive-storage/AJQWtBPGivsSIkYVpM7J1IV5mWDndX9UdqR0XtFQLc6kyzUq5mwIXZlcxWlURtsRXxHRe1WsQDkWNXxx0zjg8AVIegL28b1EZnoZ_oPFhXjTQeu-GA=w1903-h911" width="100%" height="100%" preserveAspectRatio="xMinYMin slice"></image>
               <text class="svg-masked-text" x="50%" y="50%" dy=".3em">AcosoZer0Batiz</text>
             </g>
           </svg>

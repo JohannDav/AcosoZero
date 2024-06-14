@@ -16,7 +16,7 @@ contentType="text/html" pageEncoding="UTF-8"%>
         <link href="css/OverallDesigns_3.css" rel="stylesheet" type="text/css" />
         <link href="css/DiesenoAgregar222.css" rel="stylesheet" type="text/css" />
         <link href="css/1Buttons_Lista_Reporte.css" rel="stylesheet" type="text/css"/>
-        <link href="css/1OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />
+        <link href="css/OverallDesings_Menu_Buttons.css" rel="stylesheet" type="text/css" />
         <title>Editar Reporte</title>
     </head>
     <body>
