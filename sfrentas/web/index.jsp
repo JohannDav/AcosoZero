@@ -87,7 +87,7 @@
                      <div class="menu_index">
                         <img src="img/reporte2.png" />
                         <img class="top rar" src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMhu6KXk0ULUN7UwI3FgyMF0GvHIwYnQSvWwtu80cHIPKRS0jWU0G3CZJaAG_z-ybPU_BdmXvPQfhJ1A2gcH7Hi0LN5E5Njsi4rFH3nJtYGfQ=h360" />
-                     </div>
+                     </div> 
                   </a><div class="texto" style="font-family: 'Pacifico', cursive; font-size: 48px; font-weight: bold; color: #ffffff; text-align: center;">
     Reportes
   </div>
