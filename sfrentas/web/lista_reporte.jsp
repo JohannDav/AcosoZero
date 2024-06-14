@@ -46,12 +46,6 @@ contentType="text/html" pageEncoding="UTF-8"%>
                <div class="dropdown-divider"></div>
                <a
                   class="dropdown-item"
-                  href="Controlador?accion=MisCompras"
-                  >Mis Compras</a
-                  >
-               <div class="dropdown-divider"></div>
-               <a
-                  class="dropdown-item"
                   href="./Controlador?accion=Salir">
                <i class="fas fa-arrow-right"> Salir</i></a
                   >
